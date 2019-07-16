@@ -10,3 +10,7 @@ It has several problems. The biggest concern is that the website is not responsi
 The other major issue is the color scheme. Our current color scheme works well together but using red as a primary color is a little aggressive.
 
 The website's copy is mostly okay but will require some updates.
+
+## Dev stuff
+
+See the [NextJS Readme](./NEXT_README.md) for technical information
