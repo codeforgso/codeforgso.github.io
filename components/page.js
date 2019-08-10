@@ -11,4 +11,4 @@ const Page = ({ children, title = '' }) => (
   </div>
 );
 
-export default Home;
+export default Page;
