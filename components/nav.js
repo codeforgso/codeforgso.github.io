@@ -1,59 +1,54 @@
-import React from 'react'
-import Link from 'next/link'
+import React, { useState } from 'react';
+import Link from 'next/link';
 
 const links = [
-  { href: 'https://github.com/segmentio/create-next-app', label: 'Github' }
-].map(link => {
-  link.key = `nav-link-${link.href}-${link.label}`
-  return link
-})
+  { href: '/home', label: 'Home' },
+  { href: '/about', label: 'About' },
+].map((link) => {
+  link.key = `nav-link-${link.href}-${link.label}`;
+  return link;
+});
 
-const Nav = () => (
-  <nav>
-    <ul>
-      <li>
-        <Link prefetch href="/">
-          <a>Home</a>
-        </Link>
-      </li>
-      <ul>
-        {links.map(({ key, href, label }) => (
-          <li key={key}>
-            <Link href={href}>
-              <a>{label}</a>
+function Nav() {
+  const [toggle, setToggle] = useState(false);
+
+  return (
+    <nav className="navbar" role="navigation" aria-label="main navigation">
+      <div className="navbar-brand">
+        <a className="navbar-item" href="https://bulma.io">
+          <img src="/static/cfg_logo.png" />
+        </a>
+
+        <a
+          role="button"
+          className={`navbar-burger burger ${toggle && 'is-active'} `}
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
+          onClick={() => {
+            setToggle(!toggle);
+          }}
+        >
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+          <span aria-hidden="true" />
+        </a>
+      </div>
+
+      <div
+        id="navbarBasicExample"
+        className={`navbar-menu ${toggle && 'is-active'} `}
+      >
+        <div className="navbar-start">
+          {links.map(({ href, label, key }) => (
+            <Link href={href} key={key}>
+              <a className="navbar-item">{label}</a>
             </Link>
-          </li>
-        ))}
-      </ul>
-    </ul>
+          ))}
+        </div>
+      </div>
+    </nav>
+  );
+}
 
-    <style jsx>{`
-      :global(body) {
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Avenir Next, Avenir,
-          Helvetica, sans-serif;
-      }
-      nav {
-        text-align: center;
-      }
-      ul {
-        display: flex;
-        justify-content: space-between;
-      }
-      nav > ul {
-        padding: 4px 16px;
-      }
-      li {
-        display: flex;
-        padding: 6px 8px;
-      }
-      a {
-        color: #067df7;
-        text-decoration: none;
-        font-size: 13px;
-      }
-    `}</style>
-  </nav>
-)
-
-export default Nav
+export default Nav;
