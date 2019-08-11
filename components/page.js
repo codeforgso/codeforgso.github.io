@@ -4,11 +4,13 @@ import Nav from '../components/nav';
 import '../styles.scss';
 
 const Page = ({ children, title = '' }) => (
-  <div>
+  <React.Fragment>
     <Head title={title} />
     <Nav />
-    {children}
-  </div>
+    <div className="section">
+      <div className="container">{children}</div>
+    </div>
+  </React.Fragment>
 );
 
 export default Page;
