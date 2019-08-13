@@ -14,3 +14,5 @@ The website's copy is mostly okay but will require some updates.
 ## Dev stuff
 
 See the [NextJS Readme](./NEXT_README.md) for technical information
+
+Dev URL https://codeforgsogithubio-git-dev.codeforgso.now.sh/
