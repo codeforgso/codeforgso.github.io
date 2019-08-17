@@ -15,10 +15,11 @@ function Nav() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="https://bulma.io">
-          <img src="/static/cfg_logo.png" />
-        </a>
+        {/* <a className="navbar-item" href="https://bulma.io"> */}
+        <a className="navbar-item" href="./">
 
+          <img src="/static/cfg_logo_name.png" />
+        </a>
         <a
           role="button"
           className={`navbar-burger burger ${toggle && 'is-active'} `}
