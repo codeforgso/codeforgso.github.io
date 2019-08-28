@@ -1,5 +1,5 @@
 const footer = () => (
-    <footer className="footer sticky-footer">
+    <footer className='footer'>
         <div className="columns">
             <div className="column">
                 <div className="title is-4 red has-text-centered">
@@ -17,7 +17,6 @@ const footer = () => (
                 </div>
             </div>
         </div>
-
     </footer>
 );
 
