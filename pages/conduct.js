@@ -1,10 +1,11 @@
-import React from 'react';
+
+\import React from 'react';
 import Page from '../components/page';
 import '../styles.scss';
 
-const Home = () => (
-  <Page title="Home" >
-    <p className="title" >Home (index.js)</p>
+const Conduct = () => (
+  <Page title="Code of Conduct" >
+    <p className="title" >Code of Conduct</p>
     <div>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -20,4 +21,4 @@ const Home = () => (
   </Page>
 );
 
-export default Home;
+export default Conduct;

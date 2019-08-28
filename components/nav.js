@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 const links = [
-  { href: '/home', label: 'Home' },
+  { href: '/index', label: 'Home' },
   { href: '/about', label: 'About' },
+  { href: '/join', label: 'Join Us' },
+  { href: '/resources', label: 'Resources' },
+  { href: '/projects', label: 'Our Projects' },
 ].map((link) => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;
