@@ -13,8 +13,10 @@ const Page = ({ children, title = '' }) => (
     <div className="section">
       <div className="container">{children}</div>
     </div>
-    <Footer />
+   <Footer />
   </React.Fragment>
+
+   
 );
 
 export default Page;
