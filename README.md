@@ -22,4 +22,4 @@ To run the project locally:
 
 `npm install` *Only required first time*
 
-`npm run:dev`
+`npm run dev`
