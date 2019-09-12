@@ -83,9 +83,33 @@ body {
   background: linear-gradient(to right, $red 70%, $green 30%);
 }
 
-div.sticky-top {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+.arrow {
+  position: absolute;
+  top: 15%;
+  right: 13%;
+  margin: auto;
 }
 
+div.join.bottom {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  visibility: visible;
+  display: block;
+}
+div.join.top {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  div.join.top {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    visibility: visible;
+    display: block;
+  }
+  div.join.bottom {
+    display: none;
+  }
+}
