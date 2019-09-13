@@ -47,6 +47,7 @@ $footer-background-color: $footer-background;
 html,
 body {
   height: 100%;
+  z-index: -1;
 }
 
 #__next {
@@ -55,9 +56,7 @@ body {
   min-height: 105vh;
 }
 
-.section {
-  flex: 1 0 auto;
-}
+// footer at bottom of page or content
 // not needed if min-height > 100vh or %
 // .footer {
 //   flex-shrink: 0;
@@ -76,16 +75,39 @@ body {
 // }
 // end sticky footer - always on bottom of page
 
-.button {
+.JoinButton .button {
   justify-content: left;
   padding-right: 10rem;
   color: white;
   background: linear-gradient(to right, $red 70%, $green 30%);
 }
 
-div.sticky-top {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
+.JoinButton .join-icon {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  margin: auto;
 }
 
+.JoinButton .bottom {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  visibility: visible;
+  display: block;
+}
+
+.JoinButton .top {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .JoinButton .top {
+    top: 0;
+    visibility: visible;
+    display: block;
+  }
+  .JoinButton .bottom {
+    display: none;
+  }
+}
