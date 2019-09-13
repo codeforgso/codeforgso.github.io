@@ -16,3 +16,10 @@ The website's copy is mostly okay but will require some updates.
 See the [NextJS Readme](./NEXT_README.md) for technical information
 
 Dev URL https://codeforgsogithubio-git-dev.codeforgso.now.sh/
+
+To run the project locally:
+
+
+`npm install` *Only required first time*
+
+`npm run dev`
