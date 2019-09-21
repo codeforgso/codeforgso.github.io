@@ -111,3 +111,23 @@ body {
     display: none;
   }
 }
+/*** logo styling ***/
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo__textContainer {
+  padding-left: 0.5em;
+}
+
+.logo__bottomText {
+  margin-top: -0.3em;
+  font-size: 0.6em
+}
+.logo__topText {
+  font-size: 0.6em
+}
+
+.logo__pic {
+  height: 120px;
+}
