@@ -115,6 +115,7 @@ body {
 .logo {
   display: flex;
   align-items: center;
+  margin-right: 1em;
 }
 .logo__textContainer {
   padding-left: 0.5em;
@@ -122,12 +123,9 @@ body {
 
 .logo__bottomText {
   margin-top: -0.3em;
-  font-size: 0.6em
+  font-size: 1em;
+  // font-weight: bold;
 }
 .logo__topText {
-  font-size: 0.6em
-}
-
-.logo__pic {
-  height: 120px;
+  font-size: 1em;
 }
