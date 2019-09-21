@@ -5,8 +5,8 @@ import '../styles.scss';
 const About = () => (
   <Page title="About" >
     <p className="title" >About</p>
-    <div class="content">
-      <div class="leftcolumn">
+    <div className="content">
+      <div className="leftcolumn">
         <p>
           The Code for America mission is, in part, to
           <blockquote>build open source technology and organize a network of people dedicated to making government services simple, effective, and easy to use.</blockquote>
