@@ -111,21 +111,20 @@ body {
     display: none;
   }
 }
-/*** logo styling ***/
-.logo {
+
+.Logo  {
   display: flex;
   align-items: center;
   margin-right: 1em;
 }
-.logo__textContainer {
+.Logo .textContainer {
   padding-left: 0.5em;
 }
 
-.logo__bottomText {
+.Logo .bottomText {
   margin-top: -0.3em;
   font-size: 1em;
-  // font-weight: bold;
 }
-.logo__topText {
+.Logo .topText {
   font-size: 1em;
 }

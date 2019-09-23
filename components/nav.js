@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Link from "next/link";
+import Logo from './logo';
 
 const links = [
   { href: "/index", label: "Home" },
@@ -18,24 +19,12 @@ function Nav() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        {/* <a className="navbar-item" href="https://bulma.io"> */}
-        <Link className="navbar-item" href="./">
-          <a className="navbar-item">
-            <div className="logo">
-              <img className="logo__pic" src="/static/cfg_logo.png" />
-              <div className="logo__textContainer">
-                <p className="logo__topText">Code for</p>
-                <p className="logo__bottomText">Greensboro</p>
-              </div>
-            </div>
-          </a>
-        </Link>
+        <Logo />
         <a
           role="button"
           className={`navbar-burger burger ${toggle && "is-active"} `}
           aria-label="menu"
           aria-expanded="false"
-          data-target="navbarBasicExample"
           onClick={() => {
             setToggle(!toggle);
           }}
@@ -47,7 +36,6 @@ function Nav() {
       </div>
 
       <div
-        id="navbarBasicExample"
         className={`navbar-menu ${toggle && "is-active"} `}
       >
         <div className="navbar-start">
