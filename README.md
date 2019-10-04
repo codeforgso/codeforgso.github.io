@@ -11,15 +11,12 @@ The other major issue is the color scheme. Our current color scheme works well t
 
 The website's copy is mostly okay but will require some updates.
 
-## Dev stuff
+## Current URLs
 
-See the [NextJS Readme](./NEXT_README.md) for technical information
+1. Dev URL https://codeforgsogithubio-git-dev.codeforgso.now.sh/
 
-Dev URL https://codeforgsogithubio-git-dev.codeforgso.now.sh/
+## Table of Contents
 
-To run the project locally:
+1. [Dev Setup](./docs/setup.md)
+1. [NextJS Readme](./docs/next.md) for technical information
 
-
-`npm install` *Only required first time*
-
-`npm run dev`
