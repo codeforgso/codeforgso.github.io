@@ -1,15 +1,117 @@
+@import "./node_modules/bulma/sass/utilities/_all.sass";
+
+// app colors
+$red: hsl(9, 69%, 49%);
+$green: hsl(180, 76%, 31%);
+$lightgreen: hsl(180, 76%, 40%);
+$text-white: hsl(0, 0%, 100%);
+$text-black: hsl(3, 0%, 0%);
+$footer-background: hsl(41, 32%, 84%);
+
+// title
+$title-color: $red;
+$title-size: $size-2;
+
+// navbar
+$navbar-background-color: $green;
+$navbar-item-hover-background-color: $lightgreen;
+$navbar-item-color: $text-white;
+$navbar-item-hover-color: $text-black;
+
+//footer
+$footer-background-color: $footer-background;
+
 @import "./node_modules/bulma/bulma";
 
 // Import only what you need from Bulma
 // @import "./node_modules/bulma/sass/utilities/_all.sass";
-// @import "./node_modules/bulma/sass/elements/button.sass";
+@import "./node_modules/bulma/sass/elements/button.sass";
 // @import "./node_modules/bulma/sass/elements/container.sass";
-// @import "./node_modules/bulma/sass/elements/title.sass";
+@import "./node_modules/bulma/sass/elements/title.sass";
 // @import "./node_modules/bulma/sass/form/_all.sass";
-// @import "./node_modules/bulma/sass/components/navbar.sass";
+@import "./node_modules/bulma/sass/components/navbar.sass";
 // @import "./node_modules/bulma/sass/layout/hero.sass";
-// @import "./node_modules/bulma/sass/layout/section.sass";
-
+@import "./node_modules/bulma/sass/layout/section.sass";
 
 // TODO: override bulma default colors with our own
 // Reference: https://bulma.io/documentation/customize/variables/#derived-variables
+
+.footer {
+  padding: 1rem;
+  h1 {
+    color: $red;
+  }
+  position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
+}
+
+// footer at bottom of page or content
+html,
+body {
+  height: 100%;
+  z-index: -1;
+}
+
+#__next {
+  display: flex;
+  flex-direction: column;
+  min-height: 105vh;
+}
+
+// footer at bottom of page or content
+// not needed if min-height > 100vh or %
+// .footer {
+//   flex-shrink: 0;
+// }
+
+// end footer at bottom of page or content
+
+// sticky footer - always on bottom of page
+// .section {
+//   min-height: 100vh;
+// }
+// .footer {
+// position: -webkit-sticky; /* Safari */
+// position: sticky;
+// bottom: 0;
+// }
+// end sticky footer - always on bottom of page
+
+.JoinButton .button {
+  justify-content: left;
+  padding-right: 10rem;
+  color: white;
+  background: linear-gradient(to right, $red 70%, $green 30%);
+}
+
+.JoinButton .join-icon {
+  position: absolute;
+  top: 15%;
+  right: 10%;
+  margin: auto;
+}
+
+.JoinButton .bottom {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+  visibility: visible;
+  display: block;
+}
+
+.JoinButton .top {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .JoinButton .top {
+    top: 0;
+    visibility: visible;
+    display: block;
+  }
+  .JoinButton .bottom {
+    display: none;
+  }
+}

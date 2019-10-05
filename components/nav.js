@@ -2,8 +2,11 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 
 const links = [
-  { href: '/home', label: 'Home' },
+  { href: '/index', label: 'Home' },
   { href: '/about', label: 'About' },
+  { href: '/join', label: 'Join Us' },
+  { href: '/resources', label: 'Resources' },
+  { href: '/projects', label: 'Our Projects' },
 ].map((link) => {
   link.key = `nav-link-${link.href}-${link.label}`;
   return link;
@@ -15,10 +18,11 @@ function Nav() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="https://bulma.io">
-          <img src="/static/cfg_logo.png" />
-        </a>
+        {/* <a className="navbar-item" href="https://bulma.io"> */}
+        <a className="navbar-item" href="./">
 
+          <img src="/static/cfg_logo_name.png" />
+        </a>
         <a
           role="button"
           className={`navbar-burger burger ${toggle && 'is-active'} `}
