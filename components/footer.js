@@ -1,3 +1,14 @@
+
+const links = [
+  { href: '/join', label: 'Join Us' },
+  { href: '/resources', label: 'Resources' },
+  { href: '/contact', label: 'Contact' },
+  { href: '/conduct', label: 'Code of Conduct' },
+].map((link) => {
+  link.key = `nav-link-${link.href}-${link.label}`;
+  return link;
+});
+
 const footer = () => (
     <footer className='footer'>
         <div className="columns">
