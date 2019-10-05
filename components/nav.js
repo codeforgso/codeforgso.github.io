@@ -19,10 +19,9 @@ function Nav() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <Logo />
         <a
           role="button"
-          className={`navbar-burger burger ${toggle && "is-active"} `}
+          className={`navbar-burger burger alignment-left ${toggle && "is-active"}`}
           aria-label="menu"
           aria-expanded="false"
           onClick={() => {
@@ -33,6 +32,7 @@ function Nav() {
           <span aria-hidden="true" />
           <span aria-hidden="true" />
         </a>
+        <Logo />
       </div>
 
       <div
