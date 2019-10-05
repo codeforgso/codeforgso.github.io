@@ -78,6 +78,7 @@ body {
 .JoinButton .button {
   justify-content: left;
   padding-right: 10rem;
+  border-radius: 10%;
   color: white;
   background: linear-gradient(to right, $red 70%, $green 30%);
 }
