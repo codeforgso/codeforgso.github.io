@@ -9,11 +9,11 @@ const Page = ({ children, title = "" }) => (
   <React.Fragment>
     <Head title={title} />
     <Nav />
-    <JoinButton location="top" />
+    {/* <JoinButton location="top" /> */}
     <div className="section">
       <div className="container">{children}</div>
     </div>
-    <JoinButton location="bottom" />
+    {/* <JoinButton location="bottom" /> */}
     <Footer />
   </React.Fragment>
 );

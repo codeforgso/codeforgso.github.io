@@ -4,6 +4,8 @@ import "../styles.scss";
 
 const Projects = () => (
   <Page title="Our Projects">
+    <h2>Re-entry Resources</h2>
+    
     <p className="title">Our Projects</p>
     <div>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

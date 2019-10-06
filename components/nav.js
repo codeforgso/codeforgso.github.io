@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import Logo from './logo';
+import JoinButton from "./join-button";
 
 const links = [
   { href: "/index", label: "Home" },
@@ -46,6 +47,9 @@ function Nav() {
           ))}
         </div>
       </div>
+      <JoinButton>
+        
+      </JoinButton>
     </nav>
   );
 }
