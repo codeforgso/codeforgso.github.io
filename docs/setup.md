@@ -41,12 +41,13 @@ we highly recommend [this guide by the fine folks at GitHub][contrib].
 
         git remote -v
 
-    The output should read: `origin  git@github.com:{your GitHub username}/codeforgso.github.io.git`
+    The output should read: `origin  git@github.com:{your GitHub username}/codeforgso.github.io.git (fetch)`
+    `origin  git@github.com:{your GitHub username}/codeforgso.github.io.git (push)`
 
 ## Dependencies
 
-The project is Node application. 
-All dependencies can be installed using the following command in the root of the repo
+The project is a Node application. 
+All dependencies can be installed using the following command in the root of the repo. Note that you may need to install an npm extension if you have not yet. 
 
         npm install
 
