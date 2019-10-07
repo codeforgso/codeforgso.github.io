@@ -7,11 +7,8 @@ const About = () => (
     <p className="title" >About</p>
     <div className="content">
       <div className="leftcolumn">
-        <p>
-          The Code for America mission is, in part, to
+          <p>The Code for America mission is, in part, to</p>
           <blockquote>build open source technology and organize a network of people dedicated to making government services simple, effective, and easy to use.</blockquote>
-        </p>
-
         <p>
           As a Code for America Brigade, CfG extends this mission to the government and citizens of Greensboro. Our mission is to improve access to city data, to assist in creating and bettering city websites—and generally making the relationship between the city and the citizens better through technology.
         </p>
