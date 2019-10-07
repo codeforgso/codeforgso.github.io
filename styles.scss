@@ -43,6 +43,10 @@ $footer-background-color: $footer-background;
   }
 }
 
+h2{
+  font-size: 1.5em
+}
+
 // footer at bottom of page or content
 html,
 body {
@@ -127,4 +131,18 @@ body {
 }
 .Logo .topText {
   font-size: 1em;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.social-icon {
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+}
+
+.alignment-left {
+  margin: 0;
 }

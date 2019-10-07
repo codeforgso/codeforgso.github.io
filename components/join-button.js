@@ -1,6 +1,4 @@
 import Link from 'next/link';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight as icon } from '@fortawesome/free-solid-svg-icons';
 
 const JoinButton = (props) => {
   return (
@@ -11,7 +9,7 @@ const JoinButton = (props) => {
             <a className="button is-large">
               <span>JOIN US</span>
               <span className="icon join-icon">
-                <FontAwesomeIcon className='arrow fa-2x' icon={icon} />
+                <i className='fas fa-arrow-right fas-2x' />
               </span>
             </a>
           </Link>
