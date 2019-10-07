@@ -6,7 +6,6 @@ const links = [
   { href: "/index", label: "Home" },
   { href: "/about", label: "About" },
   { href: "/join", label: "Join Us" },
-  { href: "/resources", label: "Resources" },
   { href: "/projects", label: "Our Projects" }
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`;
@@ -19,10 +18,9 @@ function Nav() {
   return (
     <nav className="navbar" role="navigation" aria-label="main navigation">
       <div className="navbar-brand">
-        <Logo />
         <a
           role="button"
-          className={`navbar-burger burger ${toggle && "is-active"} `}
+          className={`navbar-burger burger alignment-left ${toggle && "is-active"}`}
           aria-label="menu"
           aria-expanded="false"
           onClick={() => {
@@ -33,6 +31,7 @@ function Nav() {
           <span aria-hidden="true" />
           <span aria-hidden="true" />
         </a>
+        <Logo />
       </div>
 
       <div

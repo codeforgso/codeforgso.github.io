@@ -43,6 +43,10 @@ $footer-background-color: $footer-background;
   }
 }
 
+h2{
+  font-size: 1.5em
+}
+
 // footer at bottom of page or content
 html,
 body {
@@ -142,4 +146,8 @@ body {
 .img-wrapper {
   margin-left: -15vw;
   margin-right: -15vw;
+}
+
+.alignment-left {
+  margin: 0;
 }
