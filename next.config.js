@@ -6,10 +6,6 @@ module.exports = withSass({
     config.node = {
       fs: "empty"
     };
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ["@svgr/webpack"]
-    });
     return config;
   }
 });
