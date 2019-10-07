@@ -7,15 +7,9 @@ const About = () => (
     <p className="title">About</p>
     <div className="content">
       <div className="leftcolumn">
-        <p>
-          The Code for America mission is, in part, to
-          <blockquote>
-            build open source technology and organize a network of people
-            dedicated to making government services simple, effective, and easy
-            to use.
-          </blockquote>
-        </p>
-        <div className="img-wrapper">
+          <p>The Code for America mission is, in part, to</p>
+          <blockquote>build open source technology and organize a network of people dedicated to making government services simple, effective, and easy to use.</blockquote>
+          <div className="img-wrapper">
           <img
             src="../static/Woolworths-Diner-March.svg"
             alt="Woolworths Diner March"
