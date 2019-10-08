@@ -35,10 +35,12 @@ we highly recommend [this guide by the fine folks at GitHub][contrib].
 4. Fork the repository into your account's repository list.
 
 __If you are using the GitHub Desktop client (Easy)__:  
+
 5. Use the GitHub Desktop client to download the code to your computer  
 6. Stop here, you are all set, code away!  
 
 __If you are using the command line (Harder)__:  
+
 5. Clone the freshly forked repository to your computer.  
 6. Check the upstream remote by 'cd ing' into the project's root folder and running the following command: 
 
