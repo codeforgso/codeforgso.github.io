@@ -46,8 +46,15 @@ __If you are using the command line (Harder)__:
 
         git remote -v
 
-    The output should read: `origin  git@github.com:{your GitHub username}/codeforgso.github.io.git (fetch)`
+    The output should read: 
+    
+    `origin  git@github.com:{your GitHub username}/codeforgso.github.io.git (fetch)`  
     `origin  git@github.com:{your GitHub username}/codeforgso.github.io.git (push)`
+    
+    __OR__
+    
+    `origin	https://github.com/{your GitHub username}/codeforgso.github.io.git (fetch)`  
+    `origin	https://github.com/{your GitHub username}/codeforgso.github.io.git (push)`
 
 ## Dependencies
 
