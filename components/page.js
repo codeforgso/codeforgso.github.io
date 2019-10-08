@@ -1,8 +1,5 @@
 import React from 'react'
-<<<<<<< HEAD
 import PropTypes from 'prop-types'
-=======
->>>>>>> 64878bbe12340f5c0dad22757b37bde02c8b8fc5
 import Head from '../components/head'
 import Nav from '../components/nav'
 import Footer from '../components/footer'
