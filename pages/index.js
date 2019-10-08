@@ -12,7 +12,7 @@ const Home = () => (
     </div>
     <div className="img-wrapper">
       <img
-        src="../static/Washington-DC-Capitol.svg"
+        src="../static/Washington-DC-Capitol.png"
         alt="Washington DC Capitol"
         style={{
           width: "100%"
