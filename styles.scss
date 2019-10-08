@@ -43,6 +43,10 @@ $footer-background-color: $footer-background;
   }
 }
 
+h2{
+  font-size: 1.5em
+}
+
 // footer at bottom of page or content
 html,
 body {
@@ -115,7 +119,7 @@ body {
   }
 }
 
-.Logo  {
+.Logo {
   display: flex;
   align-items: center;
   margin-right: 1em;
@@ -140,4 +144,13 @@ body {
 .social-icon {
   margin-left: 2.5em;
   margin-right: 2.5em;
+}
+
+.img-wrapper {
+  margin-left: -15vw;
+  margin-right: -15vw;
+}
+
+.alignment-left {
+  margin: 0;
 }
