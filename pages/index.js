@@ -3,7 +3,6 @@ import Page from '../components/page'
 import '../styles.scss'
 const Home = () => (
     <Page title="Home">
-        <p className="title">Home</p>
         <div className="content">
             <p className="subtitle">
                 Code for Greensboro works to improve the way our community uses

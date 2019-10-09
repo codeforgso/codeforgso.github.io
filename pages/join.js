@@ -4,7 +4,6 @@ import '../styles.scss'
 
 const Join = () => (
     <Page title="Join Us">
-        <p className="title">Join Us</p>
         <div>
             <h2>MeetUp</h2>
             <div>
@@ -12,7 +11,7 @@ const Join = () => (
             </div>
             <h2>Slack</h2>
             <div>
-                <a href="slack.codeforgreensboro.org">Join Us</a>
+                <a href="https://slack.codeforgreensboro.org/">Join Us</a>
             </div>
             <h2>Email</h2>
             <div>
