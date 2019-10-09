@@ -3,6 +3,7 @@ import Page from '../components/page'
 import '../styles.scss'
 const Home = () => (
     <Page title="Home">
+    <div id="title-buff"></div>
         <p className="title">Home</p>
         <div className="content">
             <p className="subtitle">
