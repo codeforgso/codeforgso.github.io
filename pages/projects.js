@@ -100,7 +100,7 @@ const Projects = () => (
             <div>
                 A web app providing local residents the ability to look up voter
                 registration status and polling place information by address.
-                Project initiated in partnership with the League of Women's
+                Project initiated in partnership with the League of Women{"'"}s
                 Voters Triad.{' '}
             </div>
         </div>
