@@ -44,8 +44,8 @@ const About = () => (
                 <h5>Is This Just For Coders?</h5>
 
                 <p>
-                    The short answer is, "nope". We need people from all walks
-                    of life to participate. Of course we need developers,
+                    The short answer is, {'"'}nope{'"'}. We need people from all
+                    walks of life to participate. Of course we need developers,
                     designers, user experience and user interface types, and
                     project managers. But you may not know that we also need
                     urban planners, software testers, photographers, bloggers,
@@ -67,8 +67,8 @@ const About = () => (
                 </p>
 
                 <p>
-                    Have an idea for a presentation you'd like to hear? Want to
-                    sign up to give one? Add to the list or assign a topic to
+                    Have an idea for a presentation you{"'"}d like to hear? Want
+                    to sign up to give one? Add to the list or assign a topic to
                     yourself{' '}
                     <a href="https://github.com/codeforgso/lightning-talks/issues">
                         here
