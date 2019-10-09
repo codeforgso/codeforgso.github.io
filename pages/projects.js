@@ -24,7 +24,7 @@ Re-entry Resources Repository (Open NC){' '}
             <div className='projects'>
                 A web app providing local residents the ability to look up voter
                 registration status and polling place information by address.
-                Project initiated in partnership with the League of Women's
+                Project initiated in partnership with the League of Women{"'"}s
                 Voters Triad.{' '}
               <br/>
               <a href="https://github.com/codeforgso/GoVote">

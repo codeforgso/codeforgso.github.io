@@ -29,11 +29,11 @@ const Home = () => (
                 community through technology.
             </div>
             <div className="container">
-                Code for Greensboro could not make it without the help of its
-                community. Both tech-savy and none, we have had the opportunity
-                to help others through the projects we conduct. The more, the
-                merrier, as the level of impact we have is dependant on those
-                who help. Join us on Slack and our meetups.
+                Code for Greensboro could not make it without the help of our
+                community. Both tech-savvy and not, we have had the opportunity
+                to help others through the projects we conduct. The more the
+                merrier, as the level of impact we have is dependent on those
+                who help. Join us on Slack and at our meetups.
             </div>
         </div>
     </Page>

@@ -35,16 +35,16 @@ const About = () => (
                     status of fire hydrants. Tracking storm water data. Building
                     apps that report trash collection times and let citizens
                     report missed pickups. In short, the projects we undertake
-                    improve the parts of city government that would be "nice to
-                    have", but that—in the course of running an entire city—can
-                    sometimes be forgotten.
+                    improve the parts of city government that would be
+                    {'"'}nice to have{'"'}, but that—in the course of running an
+                    entire city—can sometimes be forgotten.
                 </p>
 
                 <h5>Is This Just For Coders?</h5>
 
                 <p>
-                    The short answer is, "nope". We need people from all walks
-                    of life to participate. Of course we need developers,
+                    The short answer is, {'"'}nope{'"'}. We need people from all
+                    walks of life to participate. Of course we need developers,
                     designers, user experience and user interface types, and
                     project managers. But you may not know that we also need
                     urban planners, software testers, photographers, bloggers,
@@ -66,8 +66,8 @@ const About = () => (
                 </p>
 
                 <p>
-                    Have an idea for a presentation you'd like to hear? Want to
-                    sign up to give one? Add to the list or assign a topic to
+                    Have an idea for a presentation you{"'"}d like to hear? Want
+                    to sign up to give one? Add to the list or assign a topic to
                     yourself{' '}
                     <a href="https://github.com/codeforgso/lightning-talks/issues">
                         here

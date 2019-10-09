@@ -30,19 +30,31 @@ If giving back to open source is new,
 we highly recommend [this guide by the fine folks at GitHub][contrib].
 
 1. Sign up or sign in to your [GitHub Account][github]
-1. Navigate to the [Code For Greensboro repository][repo]
-1. On the far right there will be a button labeled 'Fork', click it.
-1. Fork the repository into your account's repository list.
-1. (Easy): Use the GitHub Desktop client to download the code to your computer
-1. __Stop here if you want to use GitHub Desktop, you are all set, code away!__
-1. (Harder): Follow the below if you want to use the command line
-1. Clone the freshly forked repository to your computer.
-1. Check the upstream remote by 'cd ing' into the project's root folder and running the following command: 
+2. Navigate to the [Code For Greensboro repository][repo]
+3. On the far right there will be a button labeled 'Fork', click it.
+4. Fork the repository into your account's repository list.
+
+__If you are using the GitHub Desktop client (Easy)__:  
+
+5. Use the GitHub Desktop client to download the code to your computer  
+6. Stop here, you are all set, code away!  
+
+__If you are using the command line (Harder)__:  
+
+5. Clone the freshly forked repository to your computer.  
+6. Check the upstream remote by 'cd ing' into the project's root folder and running the following command: 
 
         git remote -v
 
-    The output should read: `origin  git@github.com:{your GitHub username}/codeforgso.github.io.git (fetch)`
+    The output should read: 
+    
+    `origin  git@github.com:{your GitHub username}/codeforgso.github.io.git (fetch)`  
     `origin  git@github.com:{your GitHub username}/codeforgso.github.io.git (push)`
+    
+    __OR__
+    
+    `origin	https://github.com/{your GitHub username}/codeforgso.github.io.git (fetch)`  
+    `origin	https://github.com/{your GitHub username}/codeforgso.github.io.git (push)`
 
 ## Dependencies
 
