@@ -4,7 +4,6 @@ import '../styles.scss'
 
 const Join = () => (
     <Page title="Join Us">
-        <p className="title">Join Us</p>
         <div>
             <h2>MeetUp</h2>
             <div>

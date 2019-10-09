@@ -11,6 +11,7 @@ const Page = ({ children, title = '' }) => (
         <Nav />
         <JoinButton location="top" />
         <div className="section">
+            <h1 className="title">{title}</h1>
             <div className="container">{children}</div>
         </div>
         <JoinButton location="bottom" />

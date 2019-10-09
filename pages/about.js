@@ -4,7 +4,6 @@ import '../styles.scss'
 
 const About = () => (
     <Page title="About">
-        <p className="title">About</p>
         <div className="content">
             <div className="leftcolumn">
                 <p>The Code for America mission is, in part, to</p>
