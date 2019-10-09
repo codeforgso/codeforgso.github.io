@@ -24,7 +24,7 @@ const About = () => (
                     As a Code for America Brigade, CfG extends this mission to
                     the government and citizens of Greensboro. Our mission is to
                     improve access to city data, to assist in creating and
-                    bettering city websites—and generally making the
+                    bettering city websites — and generally making the
                     relationship between the city and the citizens better
                     through technology.
                 </p>
@@ -36,9 +36,9 @@ const About = () => (
                     status of fire hydrants. Tracking storm water data. Building
                     apps that report trash collection times and let citizens
                     report missed pickups. In short, the projects we undertake
-                    improve the parts of city government that would be
-                    {'"'}nice to have{'"'}, but that—in the course of running an
-                    entire city—can sometimes be forgotten.
+                    improve the parts of city government that would be "nice to
+                    have", but that — in the course of running an entire city — can
+                    sometimes be forgotten.
                 </p>
 
                 <h5>Is This Just For Coders?</h5>
@@ -74,7 +74,9 @@ const About = () => (
                         here
                     </a>
                     . Not a member of our GitHub organization? Let us know by
-                    jumping into Slack posting to the general channel. We hope
+                    jumping into{' '}
+                    <a href="https://slack.codeforgreensboro.org/">
+                        {' '} Slack and posting to the general channel. We hope
                     to see you at our next{' '}
                     <a href="http://www.meetup.com/Code-for-Greensboro/">
                         {' '}
