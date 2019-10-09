@@ -1,18 +1,12 @@
-<<<<<<< HEAD
-import React, { useState } from "react";
-import Link from "next/link";
-import Logo from './logo';
-import JoinButton from "./join-button";
-=======
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Logo from './logo'
->>>>>>> 3f046e777bd9cc69af3d2048517e065515c10380
+import JoinButton from './join-button'
 
 const links = [
     { href: '/index', label: 'Home' },
     { href: '/about', label: 'About' },
-    { href: '/join', label: 'Join Us' },
+    // { href: '/join', label: 'Join Us' },
     { href: '/projects', label: 'Our Projects' },
 ].map(link => {
     link.key = `nav-link-${link.href}-${link.label}`
@@ -42,24 +36,6 @@ function Nav() {
                 <Logo />
             </div>
 
-<<<<<<< HEAD
-      <div
-        className={`navbar-menu ${toggle && "is-active"} `}
-      >
-        <div className="navbar-start">
-          {links.map(({ href, label, key }) => (
-            <Link href={href} key={key}>
-              <a className="navbar-item">{label}</a>
-            </Link>
-          ))}
-        </div>
-      </div>
-      <JoinButton>
-        
-      </JoinButton>
-    </nav>
-  );
-=======
             <div className={`navbar-menu ${toggle && 'is-active'} `}>
                 <div className="navbar-start">
                     {links.map(({ href, label, key }) => (
@@ -68,10 +44,10 @@ function Nav() {
                         </Link>
                     ))}
                 </div>
+                <JoinButton></JoinButton>
             </div>
         </nav>
     )
->>>>>>> 3f046e777bd9cc69af3d2048517e065515c10380
 }
 
 export default Nav
