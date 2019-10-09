@@ -27,6 +27,13 @@ const Projects = () => (
                 Project initiated in partnership with the League of Women's
                 Voters Triad.{' '}
             </div>
+            <div>
+                {' '}
+                <a href="https://govotegso.org/">
+                    {' '}
+                    Open NC Repository{' '}
+                </a>
+            </div>
         </div>
     </Page>
 )
