@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import PropTypes from 'prop-types'
 
 const JoinButton = props => {
     return (
@@ -17,6 +18,10 @@ const JoinButton = props => {
             </div>
         </section>
     )
+}
+
+JoinButton.propTypes = {
+    location: PropTypes.string.isRequired,
 }
 
 export default JoinButton
