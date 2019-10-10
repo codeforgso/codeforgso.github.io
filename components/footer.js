@@ -1,14 +1,3 @@
-
-const links = [
-  { href: '/join', label: 'Join Us' },
-  { href: '/resources', label: 'Resources' },
-  { href: '/contact', label: 'Contact' },
-  { href: '/conduct', label: 'Code of Conduct' },
-].map((link) => {
-  link.key = `nav-link-${link.href}-${link.label}`;
-  return link;
-});
-
 const footer = () => (
     <footer className="footer">
         <div className="columns">
@@ -32,10 +21,10 @@ const footer = () => (
                     <h1>Contact Us</h1>
                 </div>
             </div>
-          <div class="columns">
-            <div class="column">
-                Copyright {new Date().getFullYear()} Code For Greensboro
-            </div>
+            <div className="columns">
+                <div className="column">
+                    Copyright {new Date().getFullYear()} Code For Greensboro
+                </div>
             </div>
         </div>
     </footer>
