@@ -10,7 +10,7 @@ const links = [
 });
 
 const footer = () => (
-    <footer className='footer'>
+    <footer className="footer">
         <div className="columns">
             <div className="column">
                 <div className="title is-4 red has-text-centered">
@@ -39,6 +39,6 @@ const footer = () => (
             </div>
         </div>
     </footer>
-);
+)
 
-export default footer;
+export default footer

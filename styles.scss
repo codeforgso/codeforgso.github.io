@@ -47,6 +47,10 @@ $footer-background-color: $footer-background;
  width: 100%;
 }
 
+h2{
+  font-size: 1.5em
+}
+
 // footer at bottom of page or content
 html,
 body {
@@ -82,7 +86,10 @@ body {
 .JoinButton .button {
   justify-content: left;
   padding-right: 10rem;
+  border: 1px solid white;
+  border-radius: 20px;
   color: white;
+  margin: 5px 5px 5px 0;
   background: linear-gradient(to right, $red 70%, $green 30%);
 }
 
@@ -114,4 +121,44 @@ body {
   .JoinButton .bottom {
     display: none;
   }
+}
+
+.Logo {
+  display: flex;
+  align-items: center;
+  margin-right: 1em;
+}
+.Logo .textContainer {
+  padding-left: 0.5em;
+}
+
+.Logo .bottomText {
+  margin-top: -0.3em;
+  font-size: 1em;
+}
+.Logo .topText {
+  font-size: 1em;
+}
+
+.social-icons {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.social-icon {
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+}
+
+.img-wrapper {
+  margin-left: -15vw;
+  margin-right: -15vw;
+}
+
+.alignment-left {
+  margin: 0;
+}
+
+.projects {
+ padding-left: 2em;
 }

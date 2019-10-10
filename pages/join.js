@@ -57,5 +57,4 @@ render () {
 }
 }
 
-
-export default Join;
+export default Join
