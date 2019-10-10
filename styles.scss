@@ -140,6 +140,11 @@ body {
   font-size: 1em;
 }
 
+.HeroImage  img{
+  width: 100vw;
+  height: 30vh;
+}
+
 .social-icons {
   text-align: center;
   margin-top: 25px;
@@ -148,11 +153,6 @@ body {
 .social-icon {
   margin-left: 2.5em;
   margin-right: 2.5em;
-}
-
-.img-wrapper {
-  margin-left: -15vw;
-  margin-right: -15vw;
 }
 
 .alignment-left {

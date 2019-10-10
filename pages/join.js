@@ -1,6 +1,5 @@
 import React from 'react'
 import Page from '../components/page'
-import '../styles.scss'
 import * as postmark from 'postmark'
 
 class Join extends React.Component {

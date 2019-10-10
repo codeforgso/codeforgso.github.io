@@ -1,6 +1,5 @@
 import React from 'react'
 import Page from '../components/page'
-import '../styles.scss'
 
 const Contact = () => (
     <Page title="Contact Us">

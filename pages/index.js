@@ -1,6 +1,7 @@
 import React from 'react'
 import Page from '../components/page'
-import '../styles.scss'
+import HeroImage from '../components/hero-image'
+
 const Home = () => (
     <Page title="Home">
         <div className="content">
@@ -9,15 +10,7 @@ const Home = () => (
                 technology and data. And we need you—no coding required.
             </p>
         </div>
-        <div className="img-wrapper">
-            <img
-                src="../static/Washington-DC-Capitol.png"
-                alt="Washington DC Capitol"
-                style={{
-                    width: '100%',
-                }}
-            />
-        </div>
+        <HeroImage src="../static/Washington-DC-Capitol.png" alt="Capitol Builing in Washington DC" />
         <div>
             <div className="container">
                 Code for Greensboro is a local chapter of Code for America, a
