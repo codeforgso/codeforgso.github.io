@@ -41,6 +41,10 @@ $footer-background-color: $footer-background;
   h1 {
     color: $red;
   }
+  position: fixed;
+ left: 0;
+ bottom: 0;
+ width: 100%;
 }
 
 h2{
