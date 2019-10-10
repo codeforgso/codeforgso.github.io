@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Head from '../components/head'
 import Nav from '../components/nav'
 import Footer from '../components/footer'
-// import JoinButton from './join-button'
 import '../styles.scss'
 
 const Page = ({ children, title = '' }) => (
