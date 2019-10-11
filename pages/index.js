@@ -10,7 +10,10 @@ const Home = () => (
                 technology and data. And we need you—no coding required.
             </p>
         </div>
-        <HeroImage src="../static/Washington-DC-Capitol.png" alt="Capitol Builing in Washington DC" />
+        <HeroImage
+            src="../static/Washington-DC-Capitol.png"
+            alt="Capitol Builing in Washington DC"
+        />
         <div>
             <div className="container">
                 Code for Greensboro is a local chapter of Code for America, a

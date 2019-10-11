@@ -9,18 +9,16 @@ const Page = ({ children, title = '' }) => (
     <React.Fragment>
         <Head title={title} />
         <Nav />
-        {/* <JoinButton location="top" /> */}
         <div className="section">
             <h1 className="title">{title}</h1>
             <div className="container">{children}</div>
         </div>
-        {/* <JoinButton location="bottom" /> */}
         <Footer />
     </React.Fragment>
 )
 
 Page.propTypes = {
-    children: PropTypes.element.isRequired,
+    children: PropTypes.node.isRequired,
     title: PropTypes.string.isRequired,
 }
 

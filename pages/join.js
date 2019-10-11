@@ -1,6 +1,7 @@
 import React from 'react'
 import Page from '../components/page'
-import * as postmark from 'postmark'
+// import * as postmark from 'postmark'
+import postmark from 'postmark'
 
 class Join extends React.Component {
     state = {

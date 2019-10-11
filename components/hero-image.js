@@ -1,24 +1,21 @@
-import { string } from 'prop-types'
+import PropTypes from 'prop-types'
 
-const HeroImage = (props) => {
+const HeroImage = props => {
     return (
         <div className="HeroImage">
-            <img
-                src={props.src}
-                alt={props.alt}
-            />
+            <img src={props.src} alt={props.alt} />
         </div>
     )
 }
 
 HeroImage.defaultProps = {
-    src: "../static/cfg_logo_name.png",
-    alt: "Code For Greensboro Logo",
+    src: '../static/cfg_logo_name.png',
+    alt: 'Code For Greensboro Logo',
 }
 
 HeroImage.propTypes = {
-    src: string,
-    alt: string,
+    src: PropTypes.string,
+    alt: PropTypes.string,
 }
 
-export default HeroImage;
+export default HeroImage

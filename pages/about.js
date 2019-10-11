@@ -12,7 +12,10 @@ const About = () => (
                     people dedicated to making government services simple,
                     effective, and easy to use.
                 </blockquote>
-                <HeroImage src="../static/Woolworths-Diner-March.png" alt="Woolworths Diner March" />
+                <HeroImage
+                    src="../static/Woolworths-Diner-March.png"
+                    alt="Woolworths Diner March"
+                />
                 <p>
                     As a Code for America Brigade, CfG extends this mission to
                     the government and citizens of Greensboro. Our mission is to
