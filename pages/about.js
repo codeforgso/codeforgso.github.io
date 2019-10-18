@@ -1,6 +1,6 @@
 import React from 'react'
 import Page from '../components/page'
-import '../styles.scss'
+import HeroImage from '../components/hero-image'
 
 const About = () => (
     <Page title="About">
@@ -12,13 +12,10 @@ const About = () => (
                     people dedicated to making government services simple,
                     effective, and easy to use.
                 </blockquote>
-                <div className="img-wrapper">
-                    <img
-                        src="../static/Woolworths-Diner-March.svg"
-                        alt="Woolworths Diner March"
-                        style={{ width: '100%' }}
-                    />
-                </div>
+                <HeroImage
+                    src="../static/Woolworths-Diner-March.png"
+                    alt="Woolworths Diner March"
+                />
                 <p>
                     As a Code for America Brigade, CfG extends this mission to
                     the government and citizens of Greensboro. Our mission is to

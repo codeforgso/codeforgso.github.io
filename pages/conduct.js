@@ -1,6 +1,5 @@
 import React from 'react'
 import Page from '../components/page'
-import '../styles.scss'
 
 const Conduct = () => (
     <Page title="Code of Conduct">

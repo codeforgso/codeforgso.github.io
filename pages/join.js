@@ -1,83 +1,57 @@
 import React from 'react'
 import Page from '../components/page'
-import '../styles.scss'
-import * as postmark from 'postmark'
 
 class Join extends React.Component {
-    state = {
-        name: '',
-        comment: '',
-    }
-    handleChange = e => {
-        this.setState({ [e.target.name]: e.target.value })
-    }
-
-    handleSubmit = e => {
-        e.preventDefault()
-        const client = new postmark.ServerClient(
-            '3d3618d2-25f5-40ff-9009-b50b7b71ecac'
-        )
-        console.log('client')
-
-        client
-            .sendEmail({
-                From: 'hello@codeforgreensboro.org',
-                To: 'tim@codeforgreensboro.org',
-                Subject: `Comment from ${this.state.name}`,
-                TextBody: `${this.state.comment}`,
-            })
-            .then(response => {
-                console.log(response.To)
-                console.log(response.SubmittedAt)
-                console.log(response.Message)
-                console.log(response.MessageID)
-                console.log(response.ErrorCode)
-            })
-    }
-
     render() {
         console.log(this.state)
         return (
             <Page title="Join Us">
-                <p className="title">Join Us</p>
-                <div>
-                    <h2>
+                <br />
+                <div className="Join content">
+                    <div>
                         <a href="https://www.meetup.com/Code-for-Greensboro">
-                            MeetUp
-                        </a>
-                    </h2>
-                    <h2>
-                        <a href="slack.codeforgreensboro.org">Slack</a>
-                    </h2>
-                    <h2>
-                        Email{' '}
-                        <a href="mailto:hello@codeforgreensboro.org">
-                            Send Question
-                        </a>
-                    </h2>
-                    <form className="comment box" onSubmit={this.handleSubmit}>
-                        <h1>Comments and Suggestions</h1>
-                        <div className="field">
-                            <div className="control">
-                                <input
-                                    className="input"
-                                    type="text"
-                                    onChange={this.handleChange}
-                                    name="name"
-                                    placeholder="Name"
+                            <div>
+                                <img
+                                    src="../static/meetup.svg"
+                                    alt="Meetup logo"
                                 />
                             </div>
-                        </div>
-                        <textarea
-                            className="textarea"
-                            name="comment"
-                            onChange={this.handleChange}
-                            placeholder="Leave us a comment"
-                        ></textarea>
-                        <button type="submit" className="button">
-                            Submit
-                        </button>
-                    </form>
+                        </a>
+                        <p>
+                            Meetup is a platform for finding and building local
+                            local communities. People use Meetup to meet new
+                            learn new things, find support, get out of their
+                            comfort zones, and pursue their passions, together.
+                        </p>
+                    </div>
+                    <br />
+                    <div>
+                        <a href="https://bit.ly/cfgso-slack ">
+                            <div>
+                                <img
+                                    src="../static/icon_slack.svg"
+                                    alt="Slack logo"
+                                />
+                            </div>
+                        </a>
+                        <p>
+                            Slack is a collaboration hub, where the right people
+                            and the right information come together, helping
+                            everyone get work done.
+                        </p>
+                        <p>
+                            If you are already on our Slack channel, just click
+                            <a href="https://cfgso.slack.com"> here</a>
+                        </p>
+                    </div>
+                    <br />
+                    <div>
+                        <h2>
+                            <a href="mailto:hello@codeforgreensboro.org">
+                                Email Us
+                            </a>
+                        </h2>
+                    </div>
                 </div>
             </Page>
         )
