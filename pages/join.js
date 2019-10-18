@@ -7,15 +7,13 @@ class Join extends React.Component {
         return (
             <Page title="Join Us">
                 <br />
-                <div className="content">
+                <div className="Join content">
                     <div>
                         <a href="https://www.meetup.com/Code-for-Greensboro">
                             <div>
                                 <img
                                     src="../static/meetup.svg"
                                     alt="Meetup logo"
-                                    height="auto"
-                                    width="100vw"
                                 />
                             </div>
                         </a>
@@ -33,8 +31,6 @@ class Join extends React.Component {
                                 <img
                                     src="../static/icon_slack.svg"
                                     alt="Slack logo"
-                                    height="auto"
-                                    width="100vw"
                                 />
                             </div>
                         </a>
