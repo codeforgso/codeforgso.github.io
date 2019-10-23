@@ -4,7 +4,7 @@ import HeroImage from '../components/hero-image'
 
 const About = () => (
     <Page title="About">
-        <div className="content">
+        <div className="content About">
             <div className="leftcolumn">
                 <p>The Code for America mission is, in part, to</p>
                 <blockquote>
@@ -13,8 +13,8 @@ const About = () => (
                     effective, and easy to use.
                 </blockquote>
                 <HeroImage
-                    src="../static/Woolworths-Diner-March.png"
-                    alt="Woolworths Diner March"
+                    src="../static/NDOCH.jpg"
+                    alt="Greensboro National Day of Hacking"
                 />
                 <p>
                     As a Code for America Brigade, CfG extends this mission to

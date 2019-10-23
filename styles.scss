@@ -42,13 +42,13 @@ $footer-background-color: $footer-background;
     color: $red;
   }
   position: fixed;
- left: 0;
- bottom: 0;
- width: 100%;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-h2{
-  font-size: 1.5em
+h2 {
+  font-size: 1.5em;
 }
 
 // footer at bottom of page or content
@@ -152,11 +152,19 @@ body {
   font-size: 1em;
 }
 
-.HeroImage  img{
+.HeroImage img {
   width: 100vw;
   height: 30vh;
+  object-fit: cover;
 }
 
+.About .HeroImage img {
+  object-position: 100% 25%;
+}
+
+.Home .HeroImage img {
+  object-position: 0% 10%;
+}
 .social-icons {
   text-align: center;
   margin-top: 25px;
@@ -172,5 +180,5 @@ body {
 }
 
 .projects {
- padding-left: 2em;
+  padding-left: 2em;
 }
