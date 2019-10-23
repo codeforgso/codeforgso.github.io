@@ -10,8 +10,10 @@ const Page = ({ children, title = '' }) => (
         <Head title={title} />
         <Nav />
         <div className="section">
-            <h1 className="title">{title}</h1>
-            <div className="container">{children}</div>
+            <div className="container">
+                <h1 className="title">{title}</h1>
+                <div>{children}</div>
+            </div>
         </div>
         <Footer />
     </React.Fragment>
