@@ -3,7 +3,8 @@ import Page from '../components/page'
 import HeroImage from '../components/hero-image'
 
 const About = () => (
-    <Page title="About">
+    <Page title="">
+        <h1 className="title is-1">Who We Are</h1>
         <div className="content About">
             <div className="leftcolumn">
                 <p>The Code for America mission is, in part, to</p>
@@ -84,6 +85,10 @@ const About = () => (
                 </p>
             </div>
         </div>
+        <h1 className="subtitle is-2 content">LeaderShip</h1>
+        <div className="content container">add content</div>
+        <h2 className="subtitle is-2">Sponsors</h2>
+        <div className="content container">add content</div>
     </Page>
 )
 

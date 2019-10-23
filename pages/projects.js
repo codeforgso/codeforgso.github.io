@@ -2,7 +2,8 @@ import React from 'react'
 import Page from '../components/page'
 
 const Projects = () => (
-    <Page title="Our Projects">
+    <Page title="">
+        <h1 className="title is-1">Our Projects</h1>
         <div>
             <h2>Re-entry Resources</h2>
             <div className="projects">
