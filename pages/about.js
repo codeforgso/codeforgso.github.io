@@ -3,8 +3,9 @@ import Page from '../components/page'
 import HeroImage from '../components/hero-image'
 
 const About = () => (
-    <Page title="About">
-        <div className="content">
+    <Page title="">
+        <h1 className="title is-1">Who We Are</h1>
+        <div className="content About">
             <div className="leftcolumn">
                 <p>The Code for America mission is, in part, to</p>
                 <blockquote>
@@ -13,8 +14,8 @@ const About = () => (
                     effective, and easy to use.
                 </blockquote>
                 <HeroImage
-                    src="../static/Woolworths-Diner-March.png"
-                    alt="Woolworths Diner March"
+                    src="../static/NDOCH.jpg"
+                    alt="Greensboro National Day of Hacking"
                 />
                 <p>
                     As a Code for America Brigade, CfG extends this mission to
@@ -84,6 +85,10 @@ const About = () => (
                 </p>
             </div>
         </div>
+        <h1 className="subtitle is-2 content">LeaderShip</h1>
+        <div className="content container">add content</div>
+        <h2 className="subtitle is-2">Sponsors</h2>
+        <div className="content container">add content</div>
     </Page>
 )
 

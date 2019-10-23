@@ -5,7 +5,7 @@ import JoinButton from './join-button'
 
 const links = [
     { href: '/index', label: 'Home' },
-    { href: '/about', label: 'About' },
+    { href: '/about', label: 'Who We Are' },
     // { href: '/join', label: 'Join Us' },
     { href: '/projects', label: 'Our Projects' },
 ].map(link => {
