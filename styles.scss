@@ -11,6 +11,7 @@ $footer-background: hsl(41, 32%, 84%);
 // title
 $title-color: $red;
 $title-size: $size-2;
+$subtitle-color: $red;
 
 // navbar
 $navbar-background-color: $green;
@@ -51,7 +52,7 @@ $footer-background-color: $footer-background;
 }
 
 h2 {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 // footer at bottom of page or content
@@ -156,10 +157,18 @@ body {
 }
 
 .HeroImage img {
-    width: 100vw;
-    height: 30vh;
+  width: 100vw;
+  height: 30vh;
+  object-fit: cover;
 }
 
+.About .HeroImage img {
+  object-position: 100% 25%;
+}
+
+.Home .HeroImage img {
+  object-position: 0% 40%;
+}
 .social-icons {
     text-align: center;
     margin-top: 25px;
@@ -175,5 +184,5 @@ body {
 }
 
 .projects {
-    padding-left: 2em;
+  padding-left: 2em;
 }

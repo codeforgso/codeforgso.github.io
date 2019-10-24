@@ -5,8 +5,8 @@ class Join extends React.Component {
     render() {
         console.log(this.state)
         return (
-            <Page title="Join Us">
-                <br />
+            <Page title="">
+                <h1 className="title is-1">Join Us</h1>
                 <div className="Join content">
                     <div>
                         <a href="https://www.meetup.com/Code-for-Greensboro">
