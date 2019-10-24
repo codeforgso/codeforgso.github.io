@@ -6,28 +6,28 @@ const footer = () => (
             <div className="column">
                 <div className="title is-4 red has-text-centered">
                     <Link href="/join">
-                        <h1>Join</h1>
+                        <a className="title">Join</a>
                     </Link>
                 </div>
             </div>
             <div className="column">
                 <div className="title is-4 red has-text-centered">
                     <Link href="/conduct">
-                        <h1>Code of Conduct</h1>
+                        <a className="title">Code of Conduct</a>
                     </Link>
                 </div>
             </div>
             <div className="column">
                 <div className="title is-4 red has-text-centered">
                     <Link href="/resources">
-                        <h1>Resources</h1>
+                        <a className="title">Resources</a>
                     </Link>
                 </div>
             </div>
             <div className="column">
                 <div className="title is-4 red has-text-centered">
                     <Link href="/contact">
-                        <h1>Contact Us</h1>
+                        <a className="title">Contact Us</a>
                     </Link>
                 </div>
             </div>
