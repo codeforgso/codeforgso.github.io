@@ -1,10 +1,8 @@
 import React from 'react'
 import Page from '../components/page'
-import '../styles.scss'
 
 const Contact = () => (
     <Page title="Contact Us">
-        <p className="title">Contact Us</p>
         <div>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim

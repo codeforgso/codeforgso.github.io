@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Logo from './logo'
+import JoinButton from './join-button'
 
 const links = [
     { href: '/index', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/join', label: 'Join Us' },
+    { href: '/about', label: 'Who We Are' },
+    // { href: '/join', label: 'Join Us' },
     { href: '/projects', label: 'Our Projects' },
 ].map(link => {
     link.key = `nav-link-${link.href}-${link.label}`
@@ -43,6 +44,7 @@ function Nav() {
                         </Link>
                     ))}
                 </div>
+                <JoinButton></JoinButton>
             </div>
         </nav>
     )

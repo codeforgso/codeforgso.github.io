@@ -1,11 +1,11 @@
 import React from 'react'
 import Page from '../components/page'
-import '../styles.scss'
+import HeroImage from '../components/hero-image'
 
 const About = () => (
-    <Page title="About">
-        <p className="title">About</p>
-        <div className="content">
+    <Page title="">
+        <h1 className="title is-1">Who We Are</h1>
+        <div className="content About">
             <div className="leftcolumn">
                 <p>The Code for America mission is, in part, to</p>
                 <blockquote>
@@ -13,13 +13,10 @@ const About = () => (
                     people dedicated to making government services simple,
                     effective, and easy to use.
                 </blockquote>
-                <div className="img-wrapper">
-                    <img
-                        src="../static/Woolworths-Diner-March.svg"
-                        alt="Woolworths Diner March"
-                        style={{ width: '100%' }}
-                    />
-                </div>
+                <HeroImage
+                    src="../static/NDOCH.jpg"
+                    alt="Greensboro National Day of Hacking"
+                />
                 <p>
                     As a Code for America Brigade, CfG extends this mission to
                     the government and citizens of Greensboro. Our mission is to
@@ -76,8 +73,10 @@ const About = () => (
                     . Not a member of our GitHub organization? Let us know by
                     jumping into{' '}
                     <a href="https://slack.codeforgreensboro.org/">
-                        {' '} Slack and posting to the general channel. We hope
-                    to see you at our next{' '}
+                        {' '}
+                        Slack and posting to the general channel. We hope to see
+                        you at our next{' '}
+                    </a>
                     <a href="http://www.meetup.com/Code-for-Greensboro/">
                         {' '}
                         Meetup
@@ -86,6 +85,10 @@ const About = () => (
                 </p>
             </div>
         </div>
+        <h1 className="subtitle is-2 content">LeaderShip</h1>
+        <div className="content container">add content</div>
+        <h2 className="subtitle is-2">Sponsors</h2>
+        <div className="content container">add content</div>
     </Page>
 )
 
