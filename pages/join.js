@@ -7,7 +7,7 @@ class Join extends React.Component {
         return (
             <Page title="">
                 <h1 className="title is-1">Join Us</h1>
-                <div className="Join content">
+                <div className="join content">
                     <div>
                         <a href="https://www.meetup.com/Code-for-Greensboro">
                             <div>

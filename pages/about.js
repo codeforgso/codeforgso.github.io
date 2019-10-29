@@ -5,7 +5,7 @@ import HeroImage from '../components/hero-image'
 const About = () => (
     <Page title="">
         <h1 className="title is-1">Who We Are</h1>
-        <div className="content About">
+        <div className="content about">
             <div className="leftcolumn">
                 <p>The Code for America mission is, in part, to</p>
                 <blockquote>
@@ -33,9 +33,9 @@ const About = () => (
                     status of fire hydrants. Tracking storm water data. Building
                     apps that report trash collection times and let citizens
                     report missed pickups. In short, the projects we undertake
-                    improve the parts of city government that would be {"'"}nice
-                    to have{"'"}, but that — in the course of running an entire
-                    city — can sometimes be forgotten.
+                    improve the parts of city government that would be
+                    {'"'}nice to have{'"'}, but that — in the course of running
+                    an entire city — can sometimes be forgotten.
                 </p>
 
                 <h5>Is This Just For Coders?</h5>
