@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 
 const HeroImage = props => {
     return (
-        <div className="HeroImage">
+        <div className="hero-image">
             <img src={props.src} alt={props.alt} />
         </div>
     )

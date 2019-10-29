@@ -5,7 +5,7 @@ import HeroImage from '../components/hero-image'
 const About = () => (
     <Page title="">
         <h1 className="title is-1">Who We Are</h1>
-        <div className="content About">
+        <div className="content about">
             <div className="leftcolumn">
                 <p>The Code for America mission is, in part, to</p>
                 <blockquote>

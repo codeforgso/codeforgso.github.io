@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const JoinButton = () => {
     return (
-        <section className="JoinButton">
+        <section className="join-button">
             <div className="level-item">
                 <Link href="/join">
                     <a className="button is-large">

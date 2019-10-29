@@ -87,7 +87,7 @@ body {
 // }
 // end sticky footer - always on bottom of page
 
-.JoinButton .button {
+.join-button .button {
     justify-content: left;
     padding-right: 10rem;
     border: 1px solid white;
@@ -97,14 +97,14 @@ body {
     background: linear-gradient(to right, $red 70%, $green 30%);
 }
 
-.JoinButton .join-icon {
+.join-button .join-icon {
     position: absolute;
     top: 15%;
     right: 10%;
     margin: auto;
 }
 
-.JoinButton .bottom {
+.join-button .bottom {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     bottom: 0;
@@ -112,61 +112,61 @@ body {
     display: block;
 }
 
-.JoinButton .top {
+.join-button .top {
     display: none;
 }
 
 @media (min-width: 769px) {
-    .JoinButton .top {
+    .join-button .top {
         top: 0;
         visibility: visible;
         display: block;
     }
-    .JoinButton .bottom {
+    .join-button .bottom {
         display: none;
     }
 }
 
-.Join img {
+.join img {
     height: auto;
     width: 20vw;
 }
 
 @media (min-width: 1023px) {
-    .Join img {
+    .join img {
         height: auto;
         width: 10vw;
     }
 }
 
-.Logo {
+.logo {
     display: flex;
     align-items: center;
     margin-right: 1em;
 }
-.Logo .textContainer {
+.logo .text-container {
     padding-left: 0.5em;
 }
 
-.Logo .bottomText {
+.logo .bottom-text {
     margin-top: -0.3em;
     font-size: 1em;
 }
-.Logo .topText {
+.logo .top-text {
     font-size: 1em;
 }
 
-.HeroImage img {
+.hero-image img {
   width: 100vw;
   height: 30vh;
   object-fit: cover;
 }
 
-.About .HeroImage img {
+.about .hero-image img {
   object-position: 100% 25%;
 }
 
-.Home .HeroImage img {
+.home .hero-image img {
   object-position: 0% 40%;
 }
 .social-icons {
