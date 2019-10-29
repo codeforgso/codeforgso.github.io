@@ -34,8 +34,8 @@ const About = () => (
                     apps that report trash collection times and let citizens
                     report missed pickups. In short, the projects we undertake
                     improve the parts of city government that would be
-                    {'"'}nice to have{'"'}, but that — in the course of running an
-                    entire city — can sometimes be forgotten.
+                    {'"'}nice to have{'"'}, but that — in the course of running
+                    an entire city — can sometimes be forgotten.
                 </p>
 
                 <h5>Is This Just For Coders?</h5>
