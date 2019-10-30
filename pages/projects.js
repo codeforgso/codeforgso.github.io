@@ -2,89 +2,135 @@ import React from 'react'
 import Page from '../components/page'
 
 const Projects = () => (
-    <Page title="">
+    <Page className="projects" title="">
         <h1 className="title is-1">Our Projects</h1>
         <div className="columns is-centered">
             <div className="column is-one-third">
                 <div className="card">
                     <header className="card-header">
-                        <p className="card-header-title is-centered">
+                        <div className="card-header-title is-centered">
                             <div className="card-image">
                                 <figure className="image">
                                     <img src="../static/vote.jpeg" alt="Vote" />
                                 </figure>
                             </div>
-                        </p>
+                        </div>
                     </header>
                     <div className="card-content">
+                        <div className="content title is-3 has-text-centered">
+                            GoVoteGSO
+                        </div>
                         <div className="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            Phasellus nec iaculis mauris.
-                            <a href="#">@bulmaio</a>. <a href="#">#css</a>{' '}
-                            <a href="#">#responsive</a>
-                            <br />
-                            <time dateTime="2016-1-1">
-                                11:09 PM - 1 Jan 2016
-                            </time>
+                            A web app providing local residents the ability to
+                            look up voter registration status and polling place
+                            information by address.
+
                         </div>
                     </div>
-                    <footer className="card-footer">
-                        <a href="#" className="container card-footer-item">
-                            <p className="content is-right">ppppppppp</p>
-                            <p className="content">qqqqqqqqqq</p>
-                        </a>
-                        <a href="#" className="card-footer-item">
-                            Source
-                        </a>
-                        <a href="#" className="card-footer-item">
-                            Help Needed
-                        </a>
-                    </footer>
+                    <div className="card-footer">
+                        <div className="card-footer-item">
+                            <div className="level">
+                                <div className="level-item has-text-centered">
+                                    <div>
+                                        <p className="heading">Status</p>
+                                        <p className="subtitle">On Hold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card-footer-item">
+                            <div className="level-item has-text-centered">
+                                <div>
+                                    <p className="heading">Source</p>
+                                    {/* <p className="subtitle">github</p> */}
+                                    <a
+                                        href="https://github.com/codeforgso/GoVote"
+                                        className="subtitle"
+                                    >
+                                        gitgub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card-footer-item">
+                            <div className="level-item has-text-centered">
+                                <div>
+                                    <p className="heading">Help Needed</p>
+                                    {/* <p className="subtitle">Yes</p> */}
+                                    <a
+                                        href="https://github.com/codeforgso/GoVote/issues"
+                                        className="subtitle"
+                                    >
+                                        Yes
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            {/*  */}
-            <div className="column is-one-quarter">
+            <div className="column is-one-third">
                 <div className="card">
                     <header className="card-header">
-                        <p className="card-header-title is-centered">
-                            Component
-                        </p>
-                        <a
-                            href="#"
-                            className="card-header-icon"
-                            aria-label="more options"
-                        >
-                            <span className="icon">
-                                <i
-                                    className="fas fa-angle-down"
-                                    aria-hidden="true"
-                                ></i>
-                            </span>
-                        </a>
+                        <div className="card-header-title is-centered">
+                            <div className="card-image">
+                                <figure className="image">
+                                    <img src="./../static/Prison-224x224.jpg" alt="Opening Prison Door" />
+                                </figure>
+                            </div>
+                        </div>
                     </header>
                     <div className="card-content">
+                        <div className="content title is-3 has-text-centered">
+                            Re-Entry Resources
+                        </div>
                         <div className="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            Phasellus nec iaculis mauris.
-                            <a href="#">@bulmaio</a>. <a href="#">#css</a>{' '}
-                            <a href="#">#responsive</a>
-                            <br />
-                            <time dateTime="2016-1-1">
-                                11:09 PM - 1 Jan 2016
-                            </time>
+                            A website providing information relevant and
+                            valuable to residents reentering communities after a
+                            period of incarceration. Project initiated by Code
+                            for Asheville and scaled by Open NC.
                         </div>
                     </div>
-                    <footer className="card-footer">
-                        <a href="#" className="card-footer-item">
-                            Save
-                        </a>
-                        <a href="#" className="card-footer-item">
-                            Edit
-                        </a>
-                        <a href="#" className="card-footer-item">
-                            Delete
-                        </a>
-                    </footer>
+                    <div className="card-footer">
+                        <div className="card-footer-item">
+                            <div className="level">
+                                <div className="level-item has-text-centered">
+                                    <div>
+                                        <p className="heading">Status</p>
+                                        <p className="subtitle">On Hold</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card-footer-item">
+                            <div className="level-item has-text-centered">
+                                <div>
+                                    <p className="heading">Source</p>
+                                    {/* <p className="subtitle">github</p> */}
+                                    <a
+                                        href="https://github.com/Open-NC/reentry-resources-hub"
+                                        className="subtitle"
+                                    >
+                                        gitgub
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card-footer-item">
+                            <div className="level-item has-text-centered">
+                                <div>
+                                    <p className="heading">Help Needed</p>
+                                    {/* <p className="subtitle">Yes</p> */}
+                                    <a
+                                        href="https://github.com/codeforgso/GoVote/issues"
+                                        className="subtitle"
+                                    >
+                                        Yes
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
