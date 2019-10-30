@@ -5,7 +5,7 @@ import HeroImage from '../components/hero-image'
 const Home = () => (
     <Page title="">
         <h1 className="title is-1">Home</h1>
-        <div className="Home container content">
+        <div className="home container content">
             <p className="subtitle">
                 {/* Code for Greensboro works to improve the way our community uses
                 technology and data. And we need you—no coding required. */}

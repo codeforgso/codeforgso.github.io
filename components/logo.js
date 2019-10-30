@@ -4,11 +4,11 @@ const Logo = () => {
     return (
         <Link href="/">
             <a className="navbar-item">
-                <div className="Logo">
+                <div className="logo">
                     <img src="/static/cfg_logo.png" />
-                    <div className="textContainer">
-                        <p className="topText">Code for</p>
-                        <p className="bottomText">Greensboro</p>
+                    <div className="text-container">
+                        <p className="top-text">Code for</p>
+                        <p className="bottom-text">Greensboro</p>
                     </div>
                 </div>
             </a>

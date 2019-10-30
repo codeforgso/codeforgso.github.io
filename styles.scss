@@ -1,4 +1,4 @@
-@import "./node_modules/bulma/sass/utilities/_all.sass";
+@import './node_modules/bulma/sass/utilities/_all.sass';
 
 // app colors
 $red: hsl(9, 69%, 49%);
@@ -22,30 +22,33 @@ $navbar-item-hover-color: $text-black;
 //footer
 $footer-background-color: $footer-background;
 
-@import "./node_modules/bulma/bulma";
+@import './node_modules/bulma/bulma';
 
 // Import only what you need from Bulma
 // @import "./node_modules/bulma/sass/utilities/_all.sass";
-@import "./node_modules/bulma/sass/elements/button.sass";
+@import './node_modules/bulma/sass/elements/button.sass';
 // @import "./node_modules/bulma/sass/elements/container.sass";
-@import "./node_modules/bulma/sass/elements/title.sass";
+@import './node_modules/bulma/sass/elements/title.sass';
 // @import "./node_modules/bulma/sass/form/_all.sass";
-@import "./node_modules/bulma/sass/components/navbar.sass";
+@import './node_modules/bulma/sass/components/navbar.sass';
 // @import "./node_modules/bulma/sass/layout/hero.sass";
-@import "./node_modules/bulma/sass/layout/section.sass";
+@import './node_modules/bulma/sass/layout/section.sass';
 
 // TODO: override bulma default colors with our own
 // Reference: https://bulma.io/documentation/customize/variables/#derived-variables
 
 .footer {
-  padding: 1rem;
-  h1 {
-    color: $red;
-  }
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+    padding: 1rem;
+    h1 {
+        color: $red;
+    }
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    a.title {
+        font-size: 1.45rem;
+    }
 }
 
 h2 {
@@ -55,14 +58,14 @@ h2 {
 // footer at bottom of page or content
 html,
 body {
-  height: 100%;
-  z-index: -1;
+    height: 100%;
+    z-index: -1;
 }
 
 #__next {
-  display: flex;
-  flex-direction: column;
-  min-height: 105vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 105vh;
 }
 
 // footer at bottom of page or content
@@ -84,100 +87,100 @@ body {
 // }
 // end sticky footer - always on bottom of page
 
-.JoinButton .button {
-  justify-content: left;
-  padding-right: 10rem;
-  border: 1px solid white;
-  border-radius: 20px;
-  color: white;
-  margin: 5px 5px 5px 0;
-  background: linear-gradient(to right, $red 70%, $green 30%);
+.join-button .button {
+    justify-content: left;
+    padding-right: 10rem;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+    margin: 5px 5px 5px 0;
+    background: linear-gradient(to right, $red 70%, $green 30%);
 }
 
-.JoinButton .join-icon {
-  position: absolute;
-  top: 15%;
-  right: 10%;
-  margin: auto;
+.join-button .join-icon {
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    margin: auto;
 }
 
-.JoinButton .bottom {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  bottom: 0;
-  visibility: visible;
-  display: block;
+.join-button .bottom {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    bottom: 0;
+    visibility: visible;
+    display: block;
 }
 
-.JoinButton .top {
-  display: none;
+.join-button .top {
+    display: none;
 }
 
 @media (min-width: 769px) {
-  .JoinButton .top {
-    top: 0;
-    visibility: visible;
-    display: block;
-  }
-  .JoinButton .bottom {
-    display: none;
-  }
+    .join-button .top {
+        top: 0;
+        visibility: visible;
+        display: block;
+    }
+    .join-button .bottom {
+        display: none;
+    }
 }
 
-.Join img {
-  height: auto;
-  width: 20vw;
+.join img {
+    height: auto;
+    width: 20vw;
 }
 
 @media (min-width: 1023px) {
-  .Join img {
-    height: auto;
-    width: 10vw;
-  }
+    .join img {
+        height: auto;
+        width: 10vw;
+    }
 }
 
-.Logo {
-  display: flex;
-  align-items: center;
-  margin-right: 1em;
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 1em;
 }
-.Logo .textContainer {
-  padding-left: 0.5em;
-}
-
-.Logo .bottomText {
-  margin-top: -0.3em;
-  font-size: 1em;
-}
-.Logo .topText {
-  font-size: 1em;
+.logo .text-container {
+    padding-left: 0.5em;
 }
 
-.HeroImage img {
+.logo .bottom-text {
+    margin-top: -0.3em;
+    font-size: 1em;
+}
+.logo .top-text {
+    font-size: 1em;
+}
+
+.hero-image img {
   width: 100vw;
   height: 30vh;
   object-fit: cover;
 }
 
-.About .HeroImage img {
+.about .hero-image img {
   object-position: 100% 25%;
 }
 
-.Home .HeroImage img {
+.home .hero-image img {
   object-position: 0% 40%;
 }
 .social-icons {
-  text-align: center;
-  margin-top: 25px;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .social-icon {
-  margin-left: 2.5em;
-  margin-right: 2.5em;
+    margin-left: 2.5em;
+    margin-right: 2.5em;
 }
 
 .alignment-left {
-  margin: 0;
+    margin: 0;
 }
 
 .projects {

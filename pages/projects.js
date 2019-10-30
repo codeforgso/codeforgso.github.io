@@ -121,6 +121,10 @@ const Projects = () => (
                 {' '}
                 <a href="https://govotegso.org/"> Open NC Repository </a>
             </div>
+            <div>
+                {' '}
+                <a href="https://govotegso.org/"> Open NC Repository </a>
+            </div>
         </div>
     </Page>
 )
