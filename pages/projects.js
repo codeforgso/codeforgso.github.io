@@ -122,7 +122,7 @@ const Projects = () => (
                 <a href="https://govotegso.org/"> Open NC Repository </a>
             </div>
         </div>
-    </Page >
+    </Page>
 )
 
 export default Projects
