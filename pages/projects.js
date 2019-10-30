@@ -24,7 +24,6 @@ const Projects = () => (
                             A web app providing local residents the ability to
                             look up voter registration status and polling place
                             information by address.
-
                         </div>
                     </div>
                     <div className="card-footer">
@@ -75,7 +74,10 @@ const Projects = () => (
                         <div className="card-header-title is-centered">
                             <div className="card-image">
                                 <figure className="image">
-                                    <img src="./../static/Prison-224x224.jpg" alt="Opening Prison Door" />
+                                    <img
+                                        src="./../static/Prison-224x224.jpg"
+                                        alt="Opening Prison Door"
+                                    />
                                 </figure>
                             </div>
                         </div>
