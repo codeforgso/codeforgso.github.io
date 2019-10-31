@@ -31,7 +31,9 @@ const Projects = () => (
                                     <div className="level-item has-text-centered">
                                         <div>
                                             <p className="heading">Status</p>
-                                            <p className="subtitle">In Design</p>
+                                            <p className="subtitle">
+                                                In Design
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -118,7 +120,7 @@ const Projects = () => (
                                             className="subtitle"
                                         >
                                             Yes
-                                    </a>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -168,7 +170,7 @@ const Projects = () => (
                                             className="subtitle"
                                         >
                                             gitgub
-                                    </a>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -181,7 +183,7 @@ const Projects = () => (
                                             className="subtitle"
                                         >
                                             Yes
-                                    </a>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
