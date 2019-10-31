@@ -133,7 +133,7 @@ const Projects = () => (
                         <div className="card-image">
                             <figure className="image is-4by3">
                                 <img
-                                    src="../static/Prison_cell_block.jpg"
+                                    src="../static/prison.jpg"
                                     alt="Opened Prison Door"
                                 />
                             </figure>
@@ -166,7 +166,7 @@ const Projects = () => (
                                     <div>
                                         <p className="heading">Source</p>
                                         <a
-                                            href="../static/Prison_cell_block.jpg"
+                                            href="https://github.com/Open-NC/reentry-resources-hub"
                                             className="subtitle"
                                         >
                                             GitHub
@@ -179,7 +179,7 @@ const Projects = () => (
                                     <div>
                                         <p className="heading">Help Needed</p>
                                         <a
-                                            href="https://github.com/codeforgso/GoVote/issues"
+                                            href="https://github.com/Open-NC/reentry-resources-hub/issues"
                                             className="subtitle"
                                         >
                                             Yes
