@@ -47,7 +47,7 @@ const Projects = () => (
                                         href="https://github.com/codeforgso/GoVote"
                                         className="subtitle"
                                     >
-                                        gitgub
+                                        GitHub
                                     </a> */}
                                     </div>
                                 </div>
@@ -106,7 +106,7 @@ const Projects = () => (
                                             href="https://github.com/codeforgso/GoVote"
                                             className="subtitle"
                                         >
-                                            gitgub
+                                            GitHub
                                         </a>
                                     </div>
                                 </div>
@@ -166,10 +166,10 @@ const Projects = () => (
                                     <div>
                                         <p className="heading">Source</p>
                                         <a
-                                            href="https://github.com/Open-NC/reentry-resources-hub"
+                                            href="../static/Prison_cell_block.jpg"
                                             className="subtitle"
                                         >
-                                            gitgub
+                                            GitHub
                                         </a>
                                     </div>
                                 </div>
