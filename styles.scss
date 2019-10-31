@@ -28,13 +28,15 @@ $card-shadow:  -7px 11px 25px -9px rgba(0, 0, 0, 1);
 @import "./node_modules/bulma/bulma";
 
 // Import only what you need from Bulma
-// @import "./node_modules/bulma/sass/utilities/_all.sass";
+@import "./node_modules/bulma/sass/elements/container.sass";
+@import "./node_modules/bulma/sass/form/_all.sass";
+@import "./node_modules/bulma/sass/layout/hero.sass";
+@import "./node_modules/bulma/sass/utilities/_all.sass";
+
+
 @import "./node_modules/bulma/sass/elements/button.sass";
-// @import "./node_modules/bulma/sass/elements/container.sass";
 @import "./node_modules/bulma/sass/elements/title.sass";
-// @import "./node_modules/bulma/sass/form/_all.sass";
 @import "./node_modules/bulma/sass/components/navbar.sass";
-// @import "./node_modules/bulma/sass/layout/hero.sass";
 @import "./node_modules/bulma/sass/layout/section.sass";
 
 // TODO: override bulma default colors with our own
@@ -185,3 +187,25 @@ body {
 .alignment-left {
   margin: 0;
 }
+
+.projects .card-equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.projects .card-equal-height .card-footer {
+ margin-top: auto;
+}
+.projects .card{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ border-radius: 0.5rem;
+}
+.projects .card img{
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+ border-radius: 0.5rem;
+ max-width: 96.5%;
+ max-height: 96.5%;
+ margin: 0 auto;
+ margin-top: 1%;
+}
+
