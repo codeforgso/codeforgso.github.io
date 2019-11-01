@@ -6,7 +6,6 @@ $green: hsl(180, 76%, 31%);
 $lightgreen: hsl(180, 76%, 40%);
 $text-white: hsl(0, 0%, 100%);
 $text-black: hsl(3, 0%, 0%);
-$footer-background: hsl(41, 32%, 84%);
 
 // title
 $title-color: $red;
@@ -20,7 +19,9 @@ $navbar-item-color: $text-white;
 $navbar-item-hover-color: $text-black;
 
 // footer
+$footer-background: hsl(41, 32%, 84%);
 $footer-background-color: $footer-background;
+
 
 // cards
 $card-shadow:  -7px 11px 25px -9px rgba(0, 0, 0, 1);
@@ -42,36 +43,252 @@ $card-shadow:  -7px 11px 25px -9px rgba(0, 0, 0, 1);
 // TODO: override bulma default colors with our own
 // Reference: https://bulma.io/documentation/customize/variables/#derived-variables
 
-.footer {
-  padding: 1rem;
-  h1 {
-    color: $red;
-  }
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  a.title {
-    font-size: 1.45rem;
-  }
-}
+// .footer {
+//   padding: 1rem;
+//   h1 {
+//     color: $red;
+//   }
+//   position: fixed;
+//   left: 0;
+//   bottom: 0;
+//   width: 100%;
+//   a.title {
+//     font-size: 1.45rem;
+//   }
+// }
 
 h2 {
   font-size: 1.5em;
 }
 
 // footer at bottom of page or content
-html,
-body {
-  height: 100%;
-  z-index: -1;
-}
+// html,
+// body {
+//   height: 100%;
+//   // z-index: -1;
+//   // min-height: 100vh;
+// }
 
 #__next {
   display: flex;
   flex-direction: column;
   min-height: 105vh;
 }
+
+// slide-out footer
+// body {
+//   position:relative;
+//   z-index:0;
+// }
+// .main {
+//   position:relative;
+//   z-index:1;
+// }
+// footer {
+//   height: 500px;
+//   z-index:-2;
+//   position: relative;
+// }
+// footer > div {
+//   z-index:-1;
+//   position: fixed;
+// }
+
+body{
+  font:15px/1.3 'PT Sans', sans-serif;
+  color: #5e5b64;
+
+  /* Create a page-wide stacking context 
+  (so that negative margins work as you expect) */
+
+  position:relative;
+  z-index:0;
+}
+
+.main{
+  position:relative;
+  z-index:1;
+
+  background-color: #fff;
+
+  background-image:-webkit-radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
+  background-image:-moz-radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
+  background-image:radial-gradient(center, circle farthest-corner, #fff, #e2e2e2);
+
+  padding: 120px 0 15px;
+  box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+
+footer{
+  height: 200px;
+  color:#ccc;
+  font-size:12px;
+
+  position:relative;
+  z-index:-2;
+
+  background-color:#31353a;
+
+  background-image:-webkit-linear-gradient(top, #31353a, #2f3337);
+  background-image:-moz-linear-gradient(top, #31353a, #2f3337);
+  background-image:linear-gradient(top, #31353a, #2f3337);
+}
+
+footer > ul{
+  width:960px;
+  position:fixed;
+  left:50%;
+  bottom:0;
+  margin-left:-480px;
+  padding-bottom: 60px;
+  z-index:-1;
+}
+
+footer > ul > li{
+  width:25%;
+  float:left;
+}
+
+footer ul{
+  list-style: none;
+}
+
+/* The links */
+
+footer > ul > li ul li{
+  margin-left:43px;
+  text-transform: uppercase;
+  font-weight:bold;
+  line-height:1.8;
+}
+
+footer > ul > li ul li a{
+  text-decoration: none !important;
+  color:#7d8691 !important;
+}
+
+footer > ul > li ul li a:hover{
+  color:#ddd !important;
+}
+
+/* The company logo */
+
+footer a.logo{
+  color: #e4e4e4 !important;
+  text-decoration: none !important;
+  font-size: 14px;
+  font-weight: bold;
+  position: relative;
+  text-transform: uppercase;
+  margin-left: 16px;
+  display: inline-block;
+  margin-top: 7px;
+}
+
+footer a.logo i{
+  font-style: normal;
+  position: absolute;
+  width: 60px;
+  display: block;
+  left: 48px;
+  top: 18px;
+  font-size: 12px;
+  color: #999;
+}
+
+footer a.logo:before{
+  content: '';
+  display: inline-block;
+  // background: url('../img/sprite.png') no-repeat -19px -70px;
+  width: 48px;
+  height: 37px;
+  vertical-align: text-top;
+}
+
+footer p{
+  width: 90%;
+  margin-right: 10%;
+  padding: 9px 0;
+  line-height: 18px;
+  background-color: #058cc7;
+  font-weight: bold;
+  font-size: 14px;
+  color:#fff;
+  text-transform: uppercase;
+  text-shadow: 0 1px rgba(0,0,0,0.1);
+  box-shadow: 0 0 3px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+  opacity:0.9;
+  cursor:default;
+
+  -webkit-transition: opacity 0.4s;
+  -moz-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+footer > ul > li:hover p{
+  opacity:1;
+}
+
+footer p:before{
+  content: '';
+  display: inline-block;
+  // background: url('../img/sprite.png') no-repeat;
+  width: 16px;
+  height: 18px;
+  margin: 0 12px 0 15px;
+  vertical-align: text-bottom;
+}
+
+footer p.home{
+  background-color: #0096d6;
+
+  background-image:-webkit-linear-gradient(top, #0096d6, #008ac6);
+  background-image:-moz-linear-gradient(top, #0096d6, #008ac6);
+  background-image:linear-gradient(top, #0096d6, #008ac6);
+}
+
+footer p.home:before{
+  background-position: 0 -110px;
+}
+
+footer p.services{
+  background-color: #00b274;
+
+  background-image:-webkit-linear-gradient(top, #00b274, #00a46b);
+  background-image:-moz-linear-gradient(top, #00b274, #00a46b);
+  background-image:linear-gradient(top, #00b274, #00a46b);
+}
+
+footer p.services:before{
+  background-position: 0 -129px;
+}
+
+footer p.reachus{
+  background-color: #d75ba2;
+
+  background-image:-webkit-linear-gradient(top, #d75ba2, #c75496);
+  background-image:-moz-linear-gradient(top, #d75ba2, #c75496);
+  background-image:linear-gradient(top, #d75ba2, #c75496);
+}
+
+footer p.reachus:before{
+  background-position: 0 -89px;
+}
+
+footer p.clients{
+  background-color: #e9ac40;
+
+  background-image:-webkit-linear-gradient(top, #e9ac40, #d89f3b);
+  background-image:-moz-linear-gradient(top, #e9ac40, #d89f3b);
+  background-image:linear-gradient(top, #e9ac40, #d89f3b);
+}
+
+footer p.clients:before{
+  background-position: 0 -69px;
+}
+
+// end slider
 
 // footer at bottom of page or content
 // not needed if min-height > 100vh or %
@@ -82,9 +299,7 @@ body {
 // end footer at bottom of page or content
 
 // sticky footer - always on bottom of page
-// .section {
-//   min-height: 100vh;
-// }
+
 // .footer {
 // position: -webkit-sticky; /* Safari */
 // position: sticky;
