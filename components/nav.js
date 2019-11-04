@@ -13,9 +13,9 @@ const links = [
     return link
 })
 
-function Nav() {
+// function Nav() {
+const Nav = () => {
     const [toggle, setToggle] = useState(false)
-
     return (
         <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
@@ -49,5 +49,6 @@ function Nav() {
         </nav>
     )
 }
+// }
 
 export default Nav
