@@ -8,7 +8,7 @@ const Join = () => (
     <Page title="">
         <h1 className="title is-1">Join Us</h1>
         <div className="join content">
-            <div>
+            <div className="join-item">
                 <a href="https://www.meetup.com/Code-for-Greensboro">
                     <div>
                         <img src="../static/meetup.svg" alt="Meetup logo" />
@@ -22,7 +22,7 @@ const Join = () => (
                 </p>
             </div>
             <br />
-            <div>
+            <div className="join-item">
                 <a href="https://bit.ly/cfgso-slack ">
                     <div>
                         <img src="../static/icon_slack.svg" alt="Slack logo" />
@@ -38,7 +38,7 @@ const Join = () => (
                 </p>
             </div>
             <br />
-            <div>
+            <div className="join-item">
                 <h2>
                     <a href="mailto:hello@codeforgreensboro.org">Email Us</a>
                 </h2>

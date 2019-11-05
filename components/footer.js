@@ -4,28 +4,34 @@ import Logo from '../components/logo'
 const Footer = () => {
     return (
         <footer className="footer">
-            <div className="footer-columns">
-                <div className=" columns is-vcentered">
-                    <div className="column is-narrow">
-                        <Logo />
-                    </div>
-                    <div className="footer-selection column is-narrow">
-                        <Link href="/join">
-                            <a className="subtitle is-6 red">Join</a>
-                        </Link>
-                    </div>
-                    <div className="column is-narrow">
-                        <Link href="/join">
-                            <a className="subtitle is-6 red">Code of Conduct</a>
-                        </Link>
-                    </div>
-                    <div className="column is-narrow">
-                        <Link href="/contact">
-                            <a className="subtitle is-6 red">Contact Us</a>
-                        </Link>
-                    </div>
+            <div className=" columns is-vcentered">
+                <div className="column is-narrow">
+                    <Logo />
                 </div>
-                <p className="copyright">
+                <div className="column is-narrow">
+                    <Link href="/join">
+                        <a className="subtitle is-6 red">Join</a>
+                    </Link>
+                </div>
+                <div className="column is-narrow">
+                    <a
+                        href="https://github.com/codeforgso/codeofconduct"
+                        className="subtitle is-6 red"
+                    >
+                        Code of Conduct
+                    </a>
+                </div>
+                <div className="column is-narrow">
+                    <a
+                        href="mailto:hello@codeforgreensboro.org"
+                        className="subtitle is-6 red"
+                    >
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+            <div className="columns is-full">
+                <p className="column copyright">
                     Copyright {new Date().getFullYear()} Code For Greensboro
                 </p>
             </div>
