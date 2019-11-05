@@ -6,7 +6,6 @@ $green: hsl(180, 76%, 31%);
 $lightgreen: hsl(180, 76%, 40%);
 $text-white: hsl(0, 0%, 100%);
 $text-black: hsl(3, 0%, 0%);
-$footer-background: hsl(41, 32%, 84%);
 
 // title
 $title-color: $red;
@@ -20,10 +19,11 @@ $navbar-item-color: $text-white;
 $navbar-item-hover-color: $text-black;
 
 // footer
+$footer-background: black;
 $footer-background-color: $footer-background;
 
 // cards
-$card-shadow:  -7px 11px 25px -9px rgba(0, 0, 0, 1);
+$card-shadow: -7px 11px 25px -9px rgba(0, 0, 0, 1);
 
 @import "./node_modules/bulma/bulma";
 
@@ -33,38 +33,16 @@ $card-shadow:  -7px 11px 25px -9px rgba(0, 0, 0, 1);
 @import "./node_modules/bulma/sass/layout/hero.sass";
 @import "./node_modules/bulma/sass/utilities/_all.sass";
 
-
 @import "./node_modules/bulma/sass/elements/button.sass";
 @import "./node_modules/bulma/sass/elements/title.sass";
 @import "./node_modules/bulma/sass/components/navbar.sass";
 @import "./node_modules/bulma/sass/layout/section.sass";
 
-// TODO: override bulma default colors with our own
 // Reference: https://bulma.io/documentation/customize/variables/#derived-variables
 
-.footer {
-  padding: 1rem;
-  h1 {
-    color: $red;
-  }
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  a.title {
-    font-size: 1.45rem;
-  }
-}
 
 h2 {
   font-size: 1.5em;
-}
-
-// footer at bottom of page or content
-html,
-body {
-  height: 100%;
-  z-index: -1;
 }
 
 #__next {
@@ -73,24 +51,44 @@ body {
   min-height: 105vh;
 }
 
-// footer at bottom of page or content
-// not needed if min-height > 100vh or %
-// .footer {
-//   flex-shrink: 0;
-// }
+body {
+  font: 15px/1.3 "PT Sans", sans-serif;
+  color: #5e5b64;
+}
 
-// end footer at bottom of page or content
+.main {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 50vh;
+  height: auto;
+}
 
-// sticky footer - always on bottom of page
-// .section {
-//   min-height: 100vh;
-// }
-// .footer {
-// position: -webkit-sticky; /* Safari */
-// position: sticky;
-// bottom: 0;
-// }
-// end sticky footer - always on bottom of page
+footer {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 45vh;
+}
+
+footer a:hover {
+  color: $text-white;
+}
+
+@media (min-width: 769px) {
+  .main {
+    margin-bottom: 15vh;
+    height: 120vh;
+  }
+  footer {
+    height: 10vh;
+  }
+}
+
+.join-item {
+  margin-top: 3rem;
+}
 
 .join-button .button {
   justify-content: left;
@@ -194,18 +192,23 @@ body {
   height: 100%;
 }
 .projects .card-equal-height .card-footer {
- margin-top: auto;
+  margin-top: auto;
 }
-.projects .card{
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- border-radius: 0.5rem;
+.projects .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
 }
-.projects .card img{
- box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
- border-radius: 0.5rem;
- max-width: 96.5%;
- max-height: 96.5%;
- margin: 0 auto;
- margin-top: 1%;
+.projects .card img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  max-width: 96.5%;
+  max-height: 96.5%;
+  margin: 0 auto;
+  margin-top: 1%;
 }
 
+.copyright {
+  font-style: italic;
+  font-size: 80%;
+  color: $text-white;
+}

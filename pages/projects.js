@@ -133,7 +133,7 @@ const Projects = () => (
                         <div className="card-image">
                             <figure className="image is-4by3">
                                 <img
-                                    src="../static/prison.jpg"
+                                    src="../static/reentry.jpg"
                                     alt="Opened Prison Door"
                                 />
                             </figure>

@@ -1,43 +1,42 @@
 import Link from 'next/link'
+import Logo from '../components/logo'
 
-const footer = () => (
-    <footer className="footer">
-        <div className="columns">
-            <div className="column">
-                <div className="title is-4 red has-text-centered">
+const Footer = () => {
+    return (
+        <footer className="footer">
+            <div className=" columns is-vcentered">
+                <div className="column is-narrow">
+                    <Logo />
+                </div>
+                <div className="column is-narrow">
                     <Link href="/join">
-                        <a className="title">Join</a>
+                        <a className="subtitle is-6 red">Join</a>
                     </Link>
                 </div>
-            </div>
-            <div className="column">
-                <div className="title is-4 red has-text-centered">
-                    <Link href="/conduct">
-                        <a className="title">Code of Conduct</a>
-                    </Link>
+                <div className="column is-narrow">
+                    <a
+                        href="https://github.com/codeforgso/codeofconduct"
+                        className="subtitle is-6 red"
+                    >
+                        Code of Conduct
+                    </a>
+                </div>
+                <div className="column is-narrow">
+                    <a
+                        href="mailto:hello@codeforgreensboro.org"
+                        className="subtitle is-6 red"
+                    >
+                        Contact Us
+                    </a>
                 </div>
             </div>
-            <div className="column">
-                <div className="title is-4 red has-text-centered">
-                    <Link href="/resources">
-                        <a className="title">Resources</a>
-                    </Link>
-                </div>
-            </div>
-            <div className="column">
-                <div className="title is-4 red has-text-centered">
-                    <Link href="/contact">
-                        <a className="title">Contact Us</a>
-                    </Link>
-                </div>
-            </div>
-            <div className="columns">
-                <div className="column">
+            <div className="columns is-full">
+                <p className="column copyright">
                     Copyright {new Date().getFullYear()} Code For Greensboro
-                </div>
+                </p>
             </div>
-        </div>
-    </footer>
-)
+        </footer>
+    )
+}
 
-export default footer
+export default Footer
