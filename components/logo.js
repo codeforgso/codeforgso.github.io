@@ -5,7 +5,10 @@ const Logo = () => {
         <Link href="/">
             <a className="navbar-item">
                 <div className="logo">
-                    <img src="/static/cfg_logo.png" />
+                    <img
+                        src="/static/cfg_logo.png"
+                        alt="Code for Greensboro logo"
+                    />
                     <div className="text-container">
                         <p className="top-text">Code for</p>
                         <p className="bottom-text">Greensboro</p>

@@ -9,7 +9,11 @@ const Join = () => (
         <h1 className="title is-1">Join Us</h1>
         <div className="join content">
             <div className="join-item">
-                <a href="https://www.meetup.com/Code-for-Greensboro">
+                <a
+                    href="https://www.meetup.com/Code-for-Greensboro"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
                     <div>
                         <img src="../static/meetup.svg" alt="Meetup logo" />
                     </div>
@@ -23,7 +27,7 @@ const Join = () => (
             </div>
             <br />
             <div className="join-item">
-                <a href="https://bit.ly/cfgso-slack ">
+                <a href="https://bit.ly/cfgso-slack" rel="noopener noreferrer" target="_blank">
                     <div>
                         <img src="../static/icon_slack.svg" alt="Slack logo" />
                     </div>
@@ -33,8 +37,11 @@ const Join = () => (
                     information come together, helping everyone get work done.
                 </p>
                 <p>
-                    If you are already on our Slack channel, just click
-                    <a href="https://cfgso.slack.com"> here</a>
+                    If you are already a member of our Slack workspace,
+                    <a href="https://cfgso.slack.com" rel="noopener noreferrer" target="_blank">
+                        {' '}
+                        visit now.
+                    </a>
                 </p>
             </div>
             <br />

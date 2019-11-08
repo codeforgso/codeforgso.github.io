@@ -17,6 +17,8 @@ const Footer = () => {
                     <a
                         href="https://github.com/codeforgso/codeofconduct"
                         className="subtitle is-6 red"
+                        rel="noopener noreferrer"
+                        target="_blank"
                     >
                         Code of Conduct
                     </a>
