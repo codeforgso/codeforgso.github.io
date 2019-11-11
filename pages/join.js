@@ -27,7 +27,11 @@ const Join = () => (
             </div>
             <br />
             <div className="join-item">
-                <a href="https://bit.ly/cfgso-slack" rel="noopener noreferrer" target="_blank">
+                <a
+                    href="https://bit.ly/cfgso-slack"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                >
                     <div>
                         <img src="../static/icon_slack.svg" alt="Slack logo" />
                     </div>
@@ -38,7 +42,11 @@ const Join = () => (
                 </p>
                 <p>
                     If you are already a member of our Slack workspace,
-                    <a href="https://cfgso.slack.com" rel="noopener noreferrer" target="_blank">
+                    <a
+                        href="https://cfgso.slack.com"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
                         {' '}
                         visit now.
                     </a>

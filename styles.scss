@@ -60,16 +60,13 @@ body {
   background-color: #fff;
   position: relative;
   z-index: 1;
-  margin-bottom: 50vh;
   height: auto;
 }
 
 footer {
-  position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  height: 45vh;
 }
 
 footer a:hover {
@@ -79,10 +76,6 @@ footer a:hover {
 @media (min-width: 769px) {
   .main {
     margin-bottom: 15vh;
-    height: 120vh;
-  }
-  footer {
-    height: 10vh;
   }
 }
 
