@@ -1,9 +1,6 @@
 import React from 'react'
 import Page from '../components/page'
 
-// class Join extends React.Component {
-//     render() {
-//         return (
 const Join = () => (
     <Page title="">
         <h1 className="title is-1">Join Us</h1>
