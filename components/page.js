@@ -11,7 +11,6 @@ const Page = ({ children, title = '' }) => (
         <Nav />
         <div className="section main">
             <div className="container">
-                <h1 className="title">{title}</h1>
                 <div>{children}</div>
             </div>
         </div>
