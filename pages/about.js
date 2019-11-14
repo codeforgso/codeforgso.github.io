@@ -26,7 +26,7 @@ const About = () => (
                     through technology.
                 </p>
 
-                <h5>For Example</h5>
+                <p className="content-heading">For Example</p>
 
                 <p>
                     What sorts of projects do we do? Mapping and recording the
@@ -38,7 +38,7 @@ const About = () => (
                     an entire city — can sometimes be forgotten.
                 </p>
 
-                <h5>Is This Just For Coders?</h5>
+                <p className="content-heading">Is This Just For Coders?</p>
 
                 <p>
                     The short answer is, {'"'}nope{'"'}. We need people from all
@@ -51,7 +51,7 @@ const About = () => (
                     we need the <em>community</em>.
                 </p>
 
-                <h5>What goes on at our meetups?</h5>
+                <p className="content-heading">What goes on at our meetups?</p>
 
                 <p>
                     We start every meetup with introductions and a welcome to
@@ -85,7 +85,7 @@ const About = () => (
                 </p>
             </div>
         </div>
-        <h1 className="subtitle is-2 content">LeaderShip</h1>
+        <h2 className="subtitle is-2 content">Leadership</h2>
         <div className="content container">add content</div>
         <h2 className="subtitle is-2">Sponsors</h2>
         <div className="content container">add content</div>
