@@ -2,7 +2,7 @@
 
 // app colors
 $red: hsl(9, 69%, 49%);
-$green: hsl(180, 76%, 31%);
+$green: hsl(180, 76%, 29%);
 $lightgreen: hsl(180, 76%, 40%);
 $text-white: hsl(0, 0%, 100%);
 $text-black: hsl(3, 0%, 0%);
@@ -161,6 +161,14 @@ footer a:hover {
 
 .about .hero-image img {
   object-position: 100% 25%;
+}
+
+.content-heading {
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.125;
+  font-size: 1.125em;
+  margin-bottom: 0.8888em;
 }
 
 .home .hero-image img {
