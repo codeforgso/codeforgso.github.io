@@ -3,7 +3,7 @@ import Page from '../components/page'
 import HeroImage from '../components/hero-image'
 
 const Home = () => (
-    <Page title="">
+    <Page title="Code for Greensboro">
         <h1 className="title is-1">Home</h1>
         <div className="home container content">
             <p className="subtitle">
