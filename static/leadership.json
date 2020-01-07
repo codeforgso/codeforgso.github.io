@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Tim Leisman",
+        "title": "Brigade Captain",
+        "handle": "@tim",
+        "bio": "Tim Leisman is the current captain of Code for Greensboro. He is a civic tech enthusiast, graduate of Guilford College and UNCG's MPA program, and works full time at the Center for Creative Leadership."
+    },
+    {
+        "name": "rob",
+        "title": "rob title",
+        "handle": "@robhandle",
+        "bio": "rob bio"
+    },
+    {
+        "name": "jordan",
+        "title": "jordan title",
+        "handle": "@jordanhandle",
+        "bio": "jordan bio"
+    },
+    {
+        "name": "ethan",
+        "title": "ethan title",
+        "handle": "@ethanhandle",
+        "bio": "ethan bio"
+    }
+]

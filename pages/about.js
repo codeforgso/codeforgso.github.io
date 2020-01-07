@@ -1,6 +1,9 @@
 import React from 'react'
 import Page from '../components/page'
 import HeroImage from '../components/hero-image'
+// import Leadership from '..//components/leadership'
+import LeadershipCard from '..//components/leadershipCard'
+import Leaders from '../static/leadership.json'
 
 const About = () => (
     <Page title="">
@@ -86,6 +89,15 @@ const About = () => (
             </div>
         </div>
         <h2 className="subtitle is-2 content">Leadership</h2>
+        <div className="columns leadership">
+            {Leaders.map(profile => {
+                return (
+                    <div className="column is-one-third" key={profile.handle}>
+                        <LeadershipCard profile={profile} />
+                    </div>
+                )
+            })}
+        </div>
         <div className="content container">add content</div>
         <h2 className="subtitle is-2">Sponsors</h2>
         <div className="content container">add content</div>
