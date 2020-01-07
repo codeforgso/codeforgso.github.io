@@ -5,7 +5,7 @@ import Nav from '../components/nav'
 import Footer from '../components/footer'
 import '../styles.scss'
 
-const Page = ({ children, title = '' }) => (
+const Page = ({ children, title = ''}) => (
     <React.Fragment>
         <Head title={title} />
         <Nav />

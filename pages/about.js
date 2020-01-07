@@ -6,7 +6,7 @@ import LeadershipCard from '..//components/leadershipCard'
 import Leaders from '../static/leadership.json'
 
 const About = () => (
-    <Page title="">
+    <Page title="Who We Are">
         <h1 className="title is-1">Who We Are</h1>
         <div className="content about">
             <div className="leftcolumn">

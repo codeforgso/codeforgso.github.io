@@ -2,7 +2,7 @@ import React from 'react'
 import Page from '../components/page'
 
 const Projects = () => (
-    <Page title="">
+    <Page title="Our Projects">
         <div className="projects">
             <h1 className="title is-1">Our Projects</h1>
             <div className="columns is-centered">

@@ -2,7 +2,7 @@ import React from 'react'
 import Page from '../components/page'
 
 const Join = () => (
-    <Page title="">
+    <Page title="Join Us">
         <h1 className="title is-1">Join Us</h1>
         <div className="join content">
             <div className="join-item">
