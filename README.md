@@ -20,3 +20,12 @@ The website's copy is mostly okay but will require some updates.
 1. [Dev Setup](./docs/setup.md)
 1. [NextJS Readme](./docs/next.md) for technical information
 
+## Maintain Leadership data
+
+1. Leadership data found on the "Who We Are" page is maintained in /static/leadership.json
+1. Images for leadership is stored in /static/leadership/
+1. Steps to maintain:
+    1. Upload image into /static/leadership/
+    1. Edit /static/leadership.json, copy existing array entry and modify the values as needed
+1. Leadership cards are created in the same sequance in the leadership.json file
+1. The leadership cards are displayed with maximum of 3 across depending on the viewport size

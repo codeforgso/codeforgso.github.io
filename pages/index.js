@@ -7,11 +7,13 @@ const Home = () => (
         <h1 className="title is-1">Home</h1>
         <div className="home container content">
             <p className="subtitle">
-                {/* Code for Greensboro works to improve the way our community uses
-                technology and data. And we need you—no coding required. */}
                 Code for Greensboro is a welcoming and inclusive volunteer group
                 of civic-minded thinkers, problem solvers, designers and techies
                 who use creative technology to solve civic and social problems.
+            </p>
+            <p className="subtitle">
+                Our mission is to engage our community and its talent through
+                civic action, open data, and technology
             </p>
             <HeroImage
                 src="../static/GreensboroSkylineSmall.jpg"

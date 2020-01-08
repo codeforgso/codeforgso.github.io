@@ -37,6 +37,19 @@ const Join = () => (
                     Slack is a collaboration hub, where the right people
                     information come together, helping everyone get work done.
                 </p>
+
+                <p>
+                    If you would like to join our Slack workspace,
+                    <a
+                        href="https://bit.ly/cfgso-slack"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                    >
+                        {' '}
+                        join now.
+                    </a>
+                </p>
+
                 <p>
                     If you are already a member of our Slack workspace,
                     <a
