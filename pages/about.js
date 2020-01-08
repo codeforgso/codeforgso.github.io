@@ -54,7 +54,7 @@ const About = () => (
                         bloggers, product managers, and anyone else who wants to
                         make technology access better in the Gate City. As we
                         always say, we need the <em>community</em>.
-                </p>
+                    </p>
 
                     <p className="content-heading">
                         What goes on at our meetups?
@@ -91,7 +91,7 @@ const About = () => (
                             Meetup
                         </a>
                         !
-                </p>
+                    </p>
                 </div>
             </div>
         </section>
@@ -120,7 +120,7 @@ const About = () => (
                 <div>add content</div>
             </div>
         </section>
-    </Page >
+    </Page>
 )
 
 export default About
