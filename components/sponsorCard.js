@@ -4,7 +4,7 @@ const Sponsor = props => {
     return (
         <div className="card sponsor-card">
             <div className="card-image">
-                <figure className="image is-4by3">
+                <figure className="image is-256x256">
                     <img
                         src={`../static/sponsors/${props.sponsor.image}`}
                         alt={props.sponsor.name}
