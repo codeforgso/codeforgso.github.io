@@ -1,9 +1,10 @@
 import React from 'react'
 import Page from '../components/page'
 import HeroImage from '../components/hero-image'
-// import Leadership from '..//components/leadership'
 import LeadershipCard from '..//components/leadershipCard'
+import SponsorCard from '..//components/sponsorCard'
 import Leaders from '../static/leadership.json'
+import Sponsors from '../static/sponsors.json'
 
 const About = () => (
     <Page title="Who We Are">
@@ -117,7 +118,18 @@ const About = () => (
         <section className="section">
             <div className="container">
                 <h2 className="subtitle is-2">Sponsors</h2>
-                <div>add content</div>
+                <div className="columns leadership">
+                    {Sponsors.map(sponsor => {
+                        return (
+                            <div
+                                className="column is-one-third"
+                                key={sponsor.name}
+                            >
+                                <SponsorCard sponsor={sponsor} />
+                            </div>
+                        )
+                    })}
+                </div>
             </div>
         </section>
     </Page>

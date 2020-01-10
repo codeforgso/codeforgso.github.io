@@ -13,12 +13,9 @@ const Leadership = props => {
             </div>
             <div className="card-content">
                 <div className="columns">
-                    <div className="column is-half">
-                        <p className="title is-3">{props.profile.title}</p>
-                    </div>
-                    <div className="column is-half">
+                    <div className="column">
+                        <p className="title is-3 ">{props.profile.title}</p>
                         <p className="title is-4">{props.profile.name}</p>
-                        <p className="subtitle is-6">{props.profile.handle}</p>
                     </div>
                 </div>
                 <div className="content">{props.profile.bio}</div>

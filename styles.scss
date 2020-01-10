@@ -79,6 +79,19 @@ footer a:hover {
   }
 }
 
+.alignment-left {
+  margin: 0;
+}
+
+.about .content-heading {
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.125;
+  font-size: 1.125em;
+  margin-bottom: 0.8888em;
+}
+
+/* join us page */
 .join-item {
   margin-top: 3rem;
 }
@@ -136,6 +149,7 @@ footer a:hover {
   }
 }
 
+/* logo */
 .logo {
   display: flex;
   align-items: center;
@@ -153,6 +167,17 @@ footer a:hover {
   font-size: 1em;
 }
 
+/* about us page */
+
+.about .content-heading {
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.125;
+  font-size: 1.125em;
+  margin-bottom: 0.8888em;
+}
+
+/* hero image */
 .hero-image img {
   width: 100vw;
   height: 30vh;
@@ -163,17 +188,12 @@ footer a:hover {
   object-position: 100% 25%;
 }
 
-.content-heading {
-  color: #363636;
-  font-weight: 600;
-  line-height: 1.125;
-  font-size: 1.125em;
-  margin-bottom: 0.8888em;
-}
-
 .home .hero-image img {
   object-position: 0% 40%;
 }
+
+/* social media icons */
+
 .social-icons {
   text-align: center;
   margin-top: 25px;
@@ -184,9 +204,9 @@ footer a:hover {
   margin-right: 2.5em;
 }
 
-.alignment-left {
-  margin: 0;
-}
+
+
+/* leadership cards */
 .leadership {
   flex-wrap: wrap;
 }
@@ -195,6 +215,15 @@ footer a:hover {
   margin-top: 2vh;
   height: 100%;
 }
+
+/* sponsor cards */
+
+.sponsor-card {
+  margin-top: 2vh;
+  height: 100%;
+}
+
+/* projects page */
 
 .projects .card-equal-height {
   display: flex;
