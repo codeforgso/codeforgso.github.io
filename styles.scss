@@ -2,15 +2,15 @@
 
 // app colors
 $red: hsl(9, 69%, 49%);
-$green: hsl(180, 76%, 31%);
+$green: hsl(180, 76%, 29%);
 $lightgreen: hsl(180, 76%, 40%);
 $text-white: hsl(0, 0%, 100%);
 $text-black: hsl(3, 0%, 0%);
-$footer-background: hsl(41, 32%, 84%);
 
 // title
 $title-color: $red;
 $title-size: $size-2;
+$subtitle-color: $red;
 
 // navbar
 $navbar-background-color: $green;
@@ -18,40 +18,31 @@ $navbar-item-hover-background-color: $lightgreen;
 $navbar-item-color: $text-white;
 $navbar-item-hover-color: $text-black;
 
-//footer
+// footer
+$footer-background: black;
 $footer-background-color: $footer-background;
+
+// cards
+$card-shadow: -7px 11px 25px -9px rgba(0, 0, 0, 1);
 
 @import "./node_modules/bulma/bulma";
 
 // Import only what you need from Bulma
-// @import "./node_modules/bulma/sass/utilities/_all.sass";
+@import "./node_modules/bulma/sass/elements/container.sass";
+@import "./node_modules/bulma/sass/form/_all.sass";
+@import "./node_modules/bulma/sass/layout/hero.sass";
+@import "./node_modules/bulma/sass/utilities/_all.sass";
+
 @import "./node_modules/bulma/sass/elements/button.sass";
-// @import "./node_modules/bulma/sass/elements/container.sass";
 @import "./node_modules/bulma/sass/elements/title.sass";
-// @import "./node_modules/bulma/sass/form/_all.sass";
 @import "./node_modules/bulma/sass/components/navbar.sass";
-// @import "./node_modules/bulma/sass/layout/hero.sass";
 @import "./node_modules/bulma/sass/layout/section.sass";
 
-// TODO: override bulma default colors with our own
 // Reference: https://bulma.io/documentation/customize/variables/#derived-variables
 
-.footer {
-  padding: 1rem;
-  h1 {
-    color: $red;
-  }
-}
 
-h2{
-  font-size: 1.5em
-}
-
-// footer at bottom of page or content
-html,
-body {
-  height: 100%;
-  z-index: -1;
+h2 {
+  font-size: 1.5em;
 }
 
 #__next {
@@ -60,41 +51,70 @@ body {
   min-height: 105vh;
 }
 
-// footer at bottom of page or content
-// not needed if min-height > 100vh or %
-// .footer {
-//   flex-shrink: 0;
-// }
-
-// end footer at bottom of page or content
-
-// sticky footer - always on bottom of page
-// .section {
-//   min-height: 100vh;
-// }
-// .footer {
-// position: -webkit-sticky; /* Safari */
-// position: sticky;
-// bottom: 0;
-// }
-// end sticky footer - always on bottom of page
-
-.JoinButton .button {
-  justify-content: left;
-  padding-right: 10rem;
-  color: white;
-  background: linear-gradient(to right, $red 70%, $green 30%);
-  border-radius: 2px;
+body {
+  font: 15px/1.3 "PT Sans", sans-serif;
+  color: #5e5b64;
 }
 
-.JoinButton .join-icon {
+.main {
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+  height: auto;
+}
+
+footer {
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+footer a:hover {
+  color: $text-white;
+}
+
+@media (min-width: 769px) {
+  .main {
+    margin-bottom: 15vh;
+  }
+}
+
+.alignment-left {
+  margin: 0;
+}
+
+.about .content-heading {
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.125;
+  font-size: 1.125em;
+  margin-bottom: 0.8888em;
+}
+
+/* join us page */
+.join-item {
+  margin-top: 3rem;
+}
+
+.join-button .button {
+  justify-content: left;
+  padding-right: 10rem;
+  border: 1px solid white;
+  border-radius: 20px;
+  color: white;
+  margin: 5px 5px 5px 0;
+  background: linear-gradient(to right, $red 70%, $green 30%);
+}
+
+.join-button .join-icon {
   position: absolute;
   top: 15%;
   right: 10%;
   margin: auto;
 }
 
-.JoinButton .bottom {
+
+.join-button .bottom {
   position: -webkit-sticky; /* Safari */
   position: sticky;
   bottom: 0;
@@ -102,37 +122,78 @@ body {
   display: block;
 }
 
-.JoinButton .top {
+.join-button .top {
   display: none;
 }
 
 @media (min-width: 769px) {
-  .JoinButton .top {
+  .join-button .top {
     top: 0;
     visibility: visible;
     display: block;
   }
-  .JoinButton .bottom {
+  .join-button .bottom {
     display: none;
   }
 }
 
-.Logo {
+.join img {
+  height: auto;
+  width: 20vw;
+  padding: 10px 0;
+}
+
+@media (min-width: 1023px) {
+  .join img {
+    height: auto;
+    width: 10vw;
+  }
+}
+
+/* logo */
+.logo {
   display: flex;
   align-items: center;
   margin-right: 1em;
 }
-.Logo .textContainer {
+.logo .text-container {
   padding-left: 0.5em;
 }
 
-.Logo .bottomText {
+.logo .bottom-text {
   margin-top: -0.3em;
   font-size: 1em;
 }
-.Logo .topText {
+.logo .top-text {
   font-size: 1em;
 }
+
+/* about us page */
+
+.about .content-heading {
+  color: #363636;
+  font-weight: 600;
+  line-height: 1.125;
+  font-size: 1.125em;
+  margin-bottom: 0.8888em;
+}
+
+/* hero image */
+.hero-image img {
+  width: 100vw;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.about .hero-image img {
+  object-position: 100% 25%;
+}
+
+.home .hero-image img {
+  object-position: 0% 40%;
+}
+
+/* social media icons */
 
 .social-icons {
   text-align: center;
@@ -144,11 +205,50 @@ body {
   margin-right: 2.5em;
 }
 
-.img-wrapper {
-  margin-left: -15vw;
-  margin-right: -15vw;
+
+
+/* leadership cards */
+.leadership {
+  flex-wrap: wrap;
 }
 
-.alignment-left {
-  margin: 0;
+.leadership-card {
+  margin-top: 2vh;
+  height: 100%;
+}
+
+/* sponsor cards */
+
+.sponsor-card {
+  margin-top: 2vh;
+  height: 100%;
+}
+
+/* projects page */
+
+.projects .card-equal-height {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.projects .card-equal-height .card-footer {
+  margin-top: auto;
+}
+.projects .card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+}
+.projects .card img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 0.5rem;
+  max-width: 96.5%;
+  max-height: 96.5%;
+  margin: 0 auto;
+  margin-top: 1%;
+}
+
+.copyright {
+  font-style: italic;
+  font-size: 80%;
+  color: $text-white;
 }

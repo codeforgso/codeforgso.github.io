@@ -1,0 +1,21 @@
+[
+    {
+        "name": "IBM.org",
+        "url": "https://www.ibm.org",
+        "image": "IBM.png",
+        "description": "IBMers have always strived to be essential and to make a difference. Now with IBM.org, it’s easier than ever for every one of us to have positive social impact."
+    },
+   
+    {
+        "name": "HQ Greensboro",
+        "url": "https://hqgreensboro.com",
+        "image": "HQGreensboro.png",
+        "description": "HQ Greensboro is a shared workspace designed to empower, foster, and cultivate businesses that produce long-term job growth and positive social impact. We address two challenges that entrepreneurs face: building a trusted support community and gaining access to flexible, affordable office space."
+    },
+    {
+        "name": "Allegacy",
+        "url":  "https://www.allegacy.org",
+        "image": "Allegacy.jpg",
+        "description": "As a credit union, Allegacy is member-owned and not-for-profit. We offer lower fees and higher earnings than you’d find at a bank. Allegacy has been helping members pursue wellness of mind, body and wallet since 1967."
+    }
+]

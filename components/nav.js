@@ -1,22 +1,23 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Logo from './logo'
+import JoinButton from './join-button'
 
 const links = [
     { href: '/index', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/join', label: 'Join Us' },
+    { href: '/about', label: 'Who We Are' },
+    // { href: '/join', label: 'Join Us' },
     { href: '/projects', label: 'Our Projects' },
 ].map(link => {
     link.key = `nav-link-${link.href}-${link.label}`
     return link
 })
 
-function Nav() {
+// function Nav() {
+const Nav = () => {
     const [toggle, setToggle] = useState(false)
-
     return (
-        <nav className="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+        <nav className="navbar" role="navigation" aria-label="main navigation">
             <div className="navbar-brand">
                 <a
                     role="button"
@@ -35,6 +36,7 @@ function Nav() {
                 <Logo />
             </div>
 
+
             <div className={`navbar-menu ${toggle && 'is-active'} `}>
                 <div className="navbar-start">
                     {links.map(({ href, label, key }) => (
@@ -43,9 +45,11 @@ function Nav() {
                         </Link>
                     ))}
                 </div>
+                <JoinButton></JoinButton>
             </div>
         </nav>
     )
 }
+// }
 
 export default Nav

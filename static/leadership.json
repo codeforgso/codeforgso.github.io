@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Tim Leisman",
+        "title": "Brigade Captain",
+        "image": "TimLeisman.jpg",
+        "bio": "Tim Leisman is the current captain of Code for Greensboro. He is a civic tech enthusiast, graduate of Guilford College and UNCG's MPA program, and works full time at the Center for Creative Leadership."
+    },
+   
+    {
+        "name": "Jordan Robinson",
+        "title": "Strategist",
+        "image": "JordanRobinson.jpg",
+        "bio": "Jordan T. Robinson is the Administrative & Operations Strategist for Code for Greensboro. His passion for helping people and communities through Art, Design, and Socialpreneurship is what fueled him in being a creative aid to the community thought Administration, Illustration, and Design. He is a graduate of NC A&T State University as well as from SCAD. Currently, he works for RTriad Enterprises, which empowers people and organizations through Cloud Computing Solutions."
+    },
+    {
+        "name": "Rob Martin",
+        "title": "Developer",
+        "image": "RobMartin.jpg",
+        "bio": "Rob is a long time member of Code for Greensboro. He is relatively new to the web development world and always learning. He has had a long career in IT and is enjoying new experiences and learning that Code for Greensboro offers."
+    }
+]
