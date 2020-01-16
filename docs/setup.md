@@ -30,6 +30,7 @@ If giving back to open source is new,
 we highly recommend [this guide by the fine folks at GitHub][contrib].
 
 1. Sign up or sign in to your [GitHub Account][github]
+
 2. Navigate to the [Code For Greensboro repository][repo]
 3. On the far right there will be a button labeled 'Fork', click it.
 4. Fork the repository into your account's repository list.
@@ -55,6 +56,7 @@ __If you are using the command line (Harder)__:
     
     `origin	https://github.com/{your GitHub username}/codeforgso.github.io.git (fetch)`  
     `origin	https://github.com/{your GitHub username}/codeforgso.github.io.git (push)`
+
 
 ## Dependencies
 

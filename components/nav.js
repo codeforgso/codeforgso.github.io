@@ -36,6 +36,7 @@ const Nav = () => {
                 <Logo />
             </div>
 
+
             <div className={`navbar-menu ${toggle && 'is-active'} `}>
                 <div className="navbar-start">
                     {links.map(({ href, label, key }) => (
