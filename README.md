@@ -30,3 +30,5 @@ The website's copy is mostly okay but will require some updates.
 1. Leadership cards are created in the same sequance in the leadership.json file
 1. The leadership cards are displayed with maximum of 3 across depending on the viewport size
 
+
+
