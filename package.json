@@ -21,6 +21,7 @@
     "net": "^1.0.2",
     "next": "^9.1.7",
     "node-sass": "^4.13.0",
+    "now": "^16.7.3",
     "postmark": "^2.3.4",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -33,7 +34,6 @@
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.17.0",
     "husky": "^3.1.0",
-
     "prettier": "1.18.2"
   }
 }
